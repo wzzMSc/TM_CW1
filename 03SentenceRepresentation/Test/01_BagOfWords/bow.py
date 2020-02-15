@@ -13,7 +13,8 @@ import numpy as np
 
 df = pd.read_csv('merged.csv')
 sens_list = df.iloc[:,0].tolist()
-
+labels_list = df.iloc[:,1].tolist()
+labels_list.insert(0,'Labels')
 vectors = kv.load_word2vec_format('pretrained.vector')
 
 # print(type(vectors['the']))
@@ -33,4 +34,5 @@ sens_list.insert(0,'Sentences')
 
 df_sens = pd.DataFrame(sens_list)
 df_vecs = pd.DataFrame(vecs_list)
-pd.concat([df_sens,df_vecs],axis=1).to_csv('sens_vecs.csv',header=False,index=False)
+df_labels = pd.DataFrame(labels_list)
+pd.concat([df_sens,df_vecs,df_labels],axis=1).to_csv('sens_vecs_labels.csv',header=False,index=False)
