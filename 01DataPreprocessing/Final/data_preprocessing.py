@@ -1,12 +1,16 @@
-import os
-os.system("pip install stop-words")
-os.system("pip install pandas")
+# import os
+# os.system("pip install stop-words")
+# os.system("pip install pandas")
 from stop_words import get_stop_words
 import pandas as pd
 import re
 
 
 stop_words = get_stop_words('english')
+stop_words.remove("what")
+stop_words.remove("how")
+stop_words.remove("who")
+stop_words.remove("where")
 input = open('train_5500.label','r')
 punctuation = '!,;:?"\'`'
 
@@ -19,7 +23,8 @@ sentences.append('Sentences')
 for line in input.readlines():
     labels.append( line.split()[0] )
     sentence = line.lower().split()[1:]
-    for word in sentence:
+    sentence_iterator = line.lower().split()[1:]
+    for word in sentence_iterator:
         if word in stop_words:
             sentence.remove(word)
     sentences.append(re.sub(r'[{}]+'.format(punctuation),'',' '.join(sentence)))
