@@ -18,7 +18,6 @@ sentences.append('Sentences')
 
 for line in input.readlines():
     labels.append( line.split()[0] )
-    # sentences.append( ' '.join(line.lower().split()[1:-1])+'\n' )
     sentence = line.lower().split()[1:-1]
     for word in sentence:
         if word in stop_words:
