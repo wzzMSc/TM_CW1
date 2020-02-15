@@ -18,7 +18,7 @@ sentences.append('Sentences')
 
 for line in input.readlines():
     labels.append( line.split()[0] )
-    sentence = line.lower().split()[1:-1]
+    sentence = line.lower().split()[1:]
     for word in sentence:
         if word in stop_words:
             sentence.remove(word)
