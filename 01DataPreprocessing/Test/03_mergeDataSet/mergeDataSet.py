@@ -1,5 +1,5 @@
-import os
-os.system("pip install pandas")
+# import os
+# os.system("pip install pandas")
 import pandas as pd
 import re
 
