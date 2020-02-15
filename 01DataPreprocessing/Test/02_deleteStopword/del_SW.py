@@ -1,3 +1,5 @@
+import os
+os.system("pip install stop-words")
 from stop_words import get_stop_words
 stop_words = get_stop_words('english')
 
