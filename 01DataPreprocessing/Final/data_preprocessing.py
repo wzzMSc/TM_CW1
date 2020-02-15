@@ -2,10 +2,11 @@ import os
 os.system("pip install stop-words")
 os.system("pip install pandas")
 from stop_words import get_stop_words
-stop_words = get_stop_words('english')
 import pandas as pd
 import re
 
+
+stop_words = get_stop_words('english')
 input = open('train_5500.label','r')
 punctuation = '!,;:?"\'`'
 
