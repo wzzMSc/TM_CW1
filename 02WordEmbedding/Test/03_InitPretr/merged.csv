@@ -28,11 +28,11 @@ what s second-most-used vowel english ,ENTY:letter
 who inventor silly putty ,HUM:ind
 what highest waterfall united states ,LOC:other
 name golf course myrtle beach .,ENTY:other
-two states enclose chesapeake bay ,LOC:state
+which two states enclose chesapeake bay ,LOC:state
 what abbreviation aids stand ,ABBR:exp
 what spermologer collect ,ENTY:other
 how many points make perfect fivepin bowling score ,NUM:count
-company manufactures video-game hardware sells  super system  ,HUM:gr
+which company manufactures video-game hardware sells  super system  ,HUM:gr
 how many community chest cards monopoly ,NUM:count
 what mormons believe ,DESC:desc
 neanderthal man live ,NUM:date
@@ -64,7 +64,7 @@ what  extended definition  mean how one write paper ,DESC:def
 what country s capital tirana ,LOC:country
 what titanium ,DESC:def
 who herb tootsie live next door ,HUM:ind
-city oldest relationship sister city los angeles ,LOC:city
+which city oldest relationship sister city los angeles ,LOC:city
 what caldera ,DESC:def
 people get calluses ,DESC:reason
 what names tourist attractions reims ,LOC:other
@@ -88,7 +88,7 @@ how many villi found small intestine ,NUM:count
 what country king wenceslas rule ,LOC:country
 what fear shadows ,ENTY:dismed
 who five marx brothers ,HUM:ind
-year new zealand excluded anzus alliance ,NUM:date
+which year new zealand excluded anzus alliance ,NUM:date
 cnn begin broadcasting ,NUM:date
 what causes body shiver cold temperatures ,DESC:reason
 what bear bull markets ,DESC:def
@@ -103,7 +103,7 @@ who invented make-up ,HUM:ind
 what origin word  attic  ,DESC:desc
 what delilah samson s hair ,DESC:desc
 what kind animals paleozoic era ,ENTY:animal
-following rhodes scholar ,HUM:ind
+which following rhodes scholar ,HUM:ind
 who comprised now-defunct comic book team known champions ,HUM:ind
 how make paintball ,DESC:manner
 what u.s. state fort knox ,LOC:state
@@ -120,7 +120,7 @@ how much money back injury lawsuit get ,NUM:money
 what s common name acetylsalicylic acid ,ENTY:termeq
 what georgetown  hoya  mean ,DESC:def
 where can find list  classic  books 5th 6th graders read ,LOC:other
-two products use tiger symbol ,ENTY:product
+which two products use tiger symbol ,ENTY:product
 how election new pope announced world ,DESC:manner
 how long take blood make one complete trip body ,NUM:period
 how chickens baby chicks ,DESC:manner
@@ -164,7 +164,7 @@ what busiest air travel season ,NUM:date
 what s colored part eye called ,ENTY:body
 what hook worms ,DESC:def
 where rose bowl played ,LOC:other
-japanese car maker biggest percentage sale domestic market ,HUM:gr
+which japanese car maker biggest percentage sale domestic market ,HUM:gr
 who mayor marbella ,HUM:ind
 what sun-blasted  14-mile wide valley just north mojave desert ,LOC:other
 what year thatcher become prime minister ,NUM:date
@@ -191,7 +191,7 @@ what gringo mean ,DESC:def
 what country contains africa s northernmost point ,LOC:country
 what therapy attempts elicit  primal scream  ,ENTY:dismed
 where kalahari desert ,LOC:other
-ventura county police department seized largest cocaine shipment s history ,HUM:gr
+which ventura county police department seized largest cocaine shipment s history ,HUM:gr
 what city sometimes called gotham ,LOC:city
 what dangles tongue palate ,ENTY:body
 who created dennis menace ,HUM:ind
@@ -208,11 +208,11 @@ what explorer nicknamed iberia s pilot ,HUM:ind
 cnn began broadcasting what year ,NUM:date
 what ball hits foul pole called ,ENTY:termeq
 what makes hamburgers taste like steakburgers ,DESC:reason
-company created internet browser mosaic ,HUM:gr
+which company created internet browser mosaic ,HUM:gr
 what rites accompanying circumcision newly born-child judaism called ,ENTY:event
 what education system 1960 s ,ENTY:other
 what south american city world s highest commercial landing field ,LOC:city
-how can find cities cable-modem access ,DESC:manner
+how can find which cities cable-modem access ,DESC:manner
 what betsy ross famous ,DESC:reason
 how many species sharks ,NUM:count
 what  snoogans  ,DESC:def
@@ -248,7 +248,7 @@ how many people ground killed bombing pan flight 103 lockerbie  scotland  decemb
 who wrote nn dt nnp nnp  ,HUM:ind
 what paracetamol ,DESC:def
 what powers weaknesses green lantern s ring ,DESC:desc
-mosquito s bite draws blood  dt nn cc dt nn .,ENTY:animal
+which mosquito s bite draws blood  dt nn cc dt nn .,ENTY:animal
 first steel mill united states built ,NUM:date
 what diminutive american female gymnast stole show 1984 olympics ,HUM:ind
 what origin name katie ,DESC:desc
@@ -296,13 +296,13 @@ how get top eiffel tower ,DESC:manner
 what  psi  stand ,ABBR:exp
 what sea romans call mare nostrum ,LOC:other
 what s term bet cards dealt ,ENTY:termeq
-came first  according genesis 1  2  22 - chicken egg ,ENTY:animal
+which came first  according genesis 1  2  22 - chicken egg ,ENTY:animal
 what city flintstones live ,LOC:city
 what latin incompetent ,ENTY:termeq
 what chemicals used lethal injection ,ENTY:dismed
 what toy company world s no.1 maker female apparel ,HUM:gr
 what board game  wood-pusher  play poorly ,ENTY:sport
-doonesbury character likely turn werewolf ,HUM:ind
+which doonesbury character likely turn werewolf ,HUM:ind
 what abbreviation micro ,ABBR:abb
 what 7 articles constitution ,ENTY:other
 who won super bowls ,HUM:gr
@@ -327,7 +327,7 @@ how silk screening done ,DESC:manner
 what latitude longitude el paso  texas ,NUM:other
 who made boat gopher wood ,HUM:ind
 where can find  fifth element  screensaver ,LOC:other
-bloom county resident wreaks havoc computer ,HUM:ind
+which bloom county resident wreaks havoc computer ,HUM:ind
 how match name social security number ,DESC:manner
 how rainbow form ,DESC:manner
 what normal resting heart rate healthy adult ,NUM:other
@@ -361,7 +361,7 @@ what causes redness cheeks blush ,DESC:reason
 who won nobel peace prize 1991 ,HUM:ind
 who challengers unknown ,HUM:gr
 define pheonix club ,DESC:def
-city christian crusaders fight recapture muslims ,LOC:city
+which city christian crusaders fight recapture muslims ,LOC:city
 what mean  rupee depreciates  ,DESC:def
 what gaming devices dubbed  mississippi marbles   memphis dominoes  ,ENTY:other
 who first coach cleveland browns ,HUM:ind
@@ -498,7 +498,7 @@ what jewish bible called ,ENTY:cremat
 grass green ,DESC:reason
 what firewall ,DESC:def
 what spy novelist served moscow correspondent reuter times london ,HUM:ind
-oil company almost picked word meant  stalled car  japanese new international name ,HUM:gr
+which oil company almost picked word meant  stalled car  japanese new international name ,HUM:gr
 how long take spider-man s web evaporate ,NUM:period
 who randy steven craft s lawyer ,HUM:ind
 what known spice island ,LOC:other
@@ -561,7 +561,7 @@ what name sitcom alyssa milano starred tony danza ,ENTY:cremat
 what nordic nations ,LOC:country
 where internet can get information fifth amendment american bill rights ,LOC:other
 what u.s. state borders illinois north ,LOC:state
-name film jude law acted .,ENTY:cremat
+name film which jude law acted .,ENTY:cremat
 what temperature baking peachy oat muffins ,NUM:temp
 what fear bees ,ENTY:dismed
 what vladimir nabokov novel features professor humbert love 12-year-old girl ,ENTY:cremat
@@ -673,8 +673,8 @@ what highest mountain world ,LOC:mount
 what arch can see place de la concorde ,LOC:other
 who sings song  drink thine eyes  ben johnson ,HUM:ind
 how long person wash hands clean ,NUM:period
-way turn bic increase flame - clockwise counterclockwise ,LOC:other
-wealthiest country world ,LOC:country
+which way turn bic increase flame - clockwise counterclockwise ,LOC:other
+which wealthiest country world ,LOC:country
 how can find phone number someone know email address ,DESC:manner
 how can contact play producers promoters on-line ,DESC:manner
 who monarch united kingdom ,HUM:ind
@@ -684,7 +684,7 @@ what top ten common girl names us ,HUM:ind
 black color mourning west ,DESC:reason
 what rarest coin ,ENTY:other
 what judith rossner novel made film starring diane keaton ,ENTY:cremat
-country australia s largest export market ,LOC:country
+which country australia s largest export market ,LOC:country
 where kentucky horse park located ,LOC:other
 what fear parasites ,ENTY:dismed
 what olympic games nadia comaneci become popular ,ENTY:sport
@@ -711,7 +711,7 @@ how hydrogen bomb different nuclear bomb ,DESC:manner
 how far can man travel outer space ,NUM:dist
 where lincoln assassinated ,LOC:other
 what type food makes fat ,ENTY:food
-what name chronic neurological autoimmune disease attacks protein sheath surrounds nerve cells causing gradual loss movement body ,ENTY:dismed
+what name chronic neurological autoimmune disease which attacks protein sheath surrounds nerve cells causing gradual loss movement body ,ENTY:dismed
 what u.s. highway death toll 1969 ,NUM:count
 what kind animals dorsets  lincolns  oxfords southdowns ,ENTY:animal
 what shortest longest songs ever produced ,ENTY:cremat
@@ -768,7 +768,7 @@ how get broken cork bottle ,DESC:manner
 where can find correct tabs third eye blind songs ,LOC:other
 how determine heating requirements home ,DESC:manner
 what former major-league left-handed baseball pitcher known  space man  ,HUM:ind
-hair care product told us  hate gray  wash away  ,ENTY:product
+which hair care product told us  hate gray  wash away  ,ENTY:product
 chicken cross road ,DESC:reason
 what michelangelo s last name ,HUM:ind
 who barbara jordan ,HUM:desc
@@ -869,7 +869,7 @@ what party winston churchill member ,HUM:gr
 what american league baseball team s worst finish 1926 1964 fourth ,HUM:gr
 where can find names 15 pokemon ,LOC:other
 what state martha stewart live ,LOC:state
-killer whale died sea world fungal infection ,ENTY:animal
+which killer whale died sea world fungal infection ,ENTY:animal
 what benelux countries ,LOC:country
 where s petrified forest ,LOC:other
 what language spoken sioux ,ENTY:lang
@@ -879,7 +879,7 @@ what american poet wrote   good fences make good neighbors  ,HUM:ind
 what state u.s. blacks ,LOC:state
 electric cars less efficient northeast california ,DESC:reason
 what occupation mandy rice-davies ,HUM:title
-what city maurizio pellegrin lives called ,LOC:city
+what city which maurizio pellegrin lives called ,LOC:city
 who painted sistine chapel ,HUM:ind
 name various costumed personas dr. henry pym .,HUM:ind
 what breed dog  little rascals  dog ,ENTY:animal
@@ -901,7 +901,7 @@ what s word broken glass sharp rocks embedded cement top wall ,ENTY:word
 what chromosome number elephant ,NUM:count
 what organization founded rev. jerry falwell ,HUM:gr
 what s longest river world ,LOC:other
-soft drink madonna advertise ,ENTY:food
+which soft drink madonna advertise ,ENTY:food
 what company bought yahoo how much deal worth ,HUM:gr
 berlin s brandenburg gate erected ,NUM:date
 how many double-word-score spaces scrabble crossword game board ,NUM:count
@@ -925,11 +925,11 @@ what difference median mean ,DESC:desc
 what top box office movie april 1998 ,ENTY:cremat
 what makes thunder ,DESC:reason
 what author photographer yousuf karsh call  shiest man ever met  ,HUM:ind
-largest clock  diameter wise  europe ,ENTY:other
+which largest clock  diameter wise  europe ,ENTY:other
 what plant rum made ,ENTY:plant
 what country godiva chocolates ,LOC:country
-name poet poem begins  know much gods  think river strong brown god-sullen  untamed ,HUM:ind
-condiment sold patent medicine ,ENTY:food
+name poet poem which begins  know much gods  think river strong brown god-sullen  untamed ,HUM:ind
+which condiment sold patent medicine ,ENTY:food
 what u.s. state records least rainfall ,LOC:state
 world enter global depression 1929 ,DESC:reason
 what archy  mehitabel ,DESC:def
@@ -977,7 +977,7 @@ what golfer called ohio fats blobbo ,HUM:ind
 who murdered leno rosemary labianca august 1,HUM:ind
 what average cost four years medical school ,NUM:money
 what god create first sentence bible ,ENTY:other
-following men married rita hayworth ,HUM:ind
+which following men married rita hayworth ,HUM:ind
 what current ticket fare cairo barbados ,NUM:money
 what nn o  mean used prefix irish surnames ,ABBR:exp
 how find oxidation numbers ,DESC:manner
@@ -1052,12 +1052,12 @@ how can find how much income tax paid social security income 1998 income tax ,DE
 who sonny liston succeed world heavyweight boxing champion ,HUM:ind
 what california s state bird ,ENTY:animal
 what martin luther king jr. s real birthday ,NUM:date
-name various super-teams angel belonged .,HUM:gr
+name various super-teams which angel belonged .,HUM:gr
 how zatanna perform magic dc comics ,DESC:manner
 what s name jacques cousteau s research ship ,ENTY:veh
 what president dispatched cruiser carry charles lindbergh home epic flight ,HUM:ind
 whose video titled shape arnold ,HUM:ind
-kevin costner movie sioux indians play role ,ENTY:cremat
+which kevin costner movie sioux indians play role ,ENTY:cremat
 how many james bond novels ,NUM:count
 how get dates  hooters  girls ,DESC:manner
 what bird can swim can t fly ,ENTY:animal
@@ -1105,7 +1105,7 @@ how many people america snore ,NUM:count
 who always trying get rent andy capp ,HUM:ind
 what soft drink heavily caffeinated ,ENTY:food
 who jackie kennedy commission write death president ,HUM:ind
-drug commonly used treat aids ,ENTY:dismed
+which drug commonly used treat aids ,ENTY:dismed
 how many stars soviet union s flag ,NUM:count
 what difference microprocessors & microcontrollers ,DESC:desc
 who sought create great society ,HUM:ind
@@ -1131,7 +1131,7 @@ what characters  names scooby-doo cartoon ,HUM:ind
 what fear cold ,ENTY:dismed
 what eduard shevardnadze s job soviet union ,HUM:title
 what causes rust ,DESC:reason
-dick tracy villain appear three times ,HUM:ind
+which dick tracy villain appear three times ,HUM:ind
 what monster spielberg s film  jaws  ,ENTY:animal
 what color arctic fox winter ,ENTY:color
 what names neil  mary  anthony mean ,DESC:def
@@ -1151,7 +1151,7 @@ what war saw naval battle luxury liners cap trafalgar carmania ,ENTY:event
 what treatment depression ,ENTY:techmeth
 what fear slime ,ENTY:dismed
 what country latin america largest one ,LOC:country
-hawaiian island pearl harbor ,LOC:other
+which hawaiian island pearl harbor ,LOC:other
 what feathered cartoon characters yugoslavians know vlaja  gaja  raja ,HUM:ind
 what marx brothers movie centers stolen painting ,ENTY:cremat
 what unusual alexandra s appearance josie pussycats ,DESC:desc
@@ -1185,7 +1185,7 @@ what origin blue boys pink girls ,DESC:desc
 what name michelangelo painting shows two hands fingers touching ,ENTY:cremat
 how big quart ,NUM:volsize
 what hub london ,DESC:def
-jude law acted film ,ENTY:cremat
+jude law acted which film ,ENTY:cremat
 what causes panic attacks ,DESC:reason
 what filling first golf balls ,DESC:def
 what drug sigmund freud become fascinated experimenting treatment neurasthenia ,ENTY:dismed
@@ -1195,7 +1195,7 @@ where can buy hat like kind jay kay jamiroquai wears ,LOC:other
 what twin cities ,DESC:def
 what beethoven s 9th symphony called ,ENTY:cremat
 name lawyer randy craft .,HUM:ind
-breakfast cereal brought  best morning  ,ENTY:food
+which breakfast cereal brought  best morning  ,ENTY:food
 what ms.  miss  mrs. stand ,ABBR:exp
 what homelite inc. home page ,LOC:other
 what explosive get mixing charcoal  sulfur saltpeter ,ENTY:substance
@@ -1246,7 +1246,7 @@ what las vegas mean ,DESC:def
 what word  meta  mean ,DESC:def
 what keeps clouds air ,ENTY:other
 what s term four-sided figure ,ENTY:termeq
-ray charles plays instrument ,ENTY:instru
+ray charles plays which instrument ,ENTY:instru
 what country western singer known silver fox ,LOC:country
 what building appropriately enough depicted back 1-dollar bill ,LOC:other
 what graduate school ,DESC:def
@@ -1279,7 +1279,7 @@ what substance gives food  taste  eaten ,ENTY:substance
 how reference website ,DESC:manner
 what pandoro ,DESC:def
 what letters zip stand phrase  zip code  ,ABBR:exp
-bourbon king restored french throne napoleon s abdication ,HUM:ind
+which bourbon king restored french throne napoleon s abdication ,HUM:ind
 what one cities university minnesota located ,LOC:city
 what words  way  written paul anka ,DESC:desc
 how install tile floor ,DESC:manner
@@ -1297,7 +1297,7 @@ what mae west world war ii battleship ,DESC:def
 define cosmology .,DESC:def
 what comedienne upstaged dwight d. eisenhower s first inauguration giving birth first child ,HUM:ind
 what amicable numbers ,DESC:def
-olympic games nadia comaneci became popular played ,NUM:date
+olympic games which nadia comaneci became popular played ,NUM:date
 where hearst castle  built publisher william randolph hearst ,LOC:other
 what s largest u.s. city great lakes ,LOC:city
 who sang desmond molly jones ,HUM:ind
@@ -1368,7 +1368,7 @@ who darius ,HUM:desc
 what movie told anna anderson s claim russian czar s daughter ,ENTY:cremat
 who dita beard work ,HUM:ind
 what kind creature coot ,ENTY:animal
-name university woodrow wilson president .,HUM:gr
+name university which woodrow wilson president .,HUM:gr
 what country first use airplane weapon war  turks libya ,LOC:country
 what university woodrow wilson president ,HUM:gr
 what fear disease ,ENTY:dismed
@@ -1379,7 +1379,7 @@ what name jewish alphabet ,ENTY:termeq
 who served inspiration schoolteacher portrayed robin williams  dead poets society  ,HUM:ind
 what columbia tristar s phone number ,NUM:code
 name five positions who line succession presidency .,HUM:title
-one original seven mercury program astronauts fly mercury flights ,HUM:ind
+which one original seven mercury program astronauts fly mercury flights ,HUM:ind
 who best known villain 165 gunpowder plot ,HUM:ind
 what capital burkina faso ,LOC:city
 what continent bolivia ,LOC:other
@@ -1396,7 +1396,7 @@ what mustachioed comedian portrayed frankie north alaska ,HUM:ind
 what utilities cost monopoly ,NUM:money
 what actor world war ii airman $5  0 bounty put head hermann goering ,HUM:ind
 what e.g. stand ,ABBR:exp
-what name medical condition baby born without brain ,ENTY:dismed
+what name medical condition which baby born without brain ,ENTY:dismed
 how storms form ,DESC:manner
 who nicolo paganini ,HUM:desc
 what city often called insurance capital world ,LOC:city
@@ -1443,7 +1443,7 @@ what presidential press secretary dismissed watergate third-rate burglary attemp
 what meerkat ,DESC:def
 who jean nicolet ,HUM:desc
 what kind animal winnie pooh ,ENTY:animal
-authors ,HUM:ind
+which authors ,HUM:ind
 what s international radio code word letter b ,ENTY:word
 who original humpty dumpty ,HUM:ind
 what cache memory ,DESC:def
@@ -1462,12 +1462,12 @@ what  borrow pit  ,DESC:def
 what 2th-century fictional character attends pencey prep school ,HUM:ind
 how many people usa say number one source information newspaper ,NUM:count
 who shakespeare s antonio borrow 3  0 ducats ,HUM:ind
-country known  big bear  ,LOC:country
+which country known  big bear  ,LOC:country
 what  melts mouth  hands  .,ENTY:food
 how many times day take prescription marked  q.i.d .  ,NUM:count
 what origin atom ,DESC:desc
 who voyager project manager ,HUM:ind
-radio stations air jim bohannon radio talk show ,HUM:gr
+which radio stations air jim bohannon radio talk show ,HUM:gr
 what two commanders directed forces battle el alamein ,HUM:ind
 name creator  muppets  .,HUM:ind
 how e-mail someone aol.com yahoo.com ,DESC:manner
@@ -1488,7 +1488,7 @@ what army s motto blood fire ,HUM:gr
 what kind patent ermal fraze get 1963 ,ENTY:other
 what hearing put seashell ear ,DESC:desc
 haunted houses popular ,DESC:reason
-gender bigger thighs ,ENTY:other
+which gender bigger thighs ,ENTY:other
 what u.s. state second-longest coastline ,LOC:state
 what state s home buffalo bill historical center ,LOC:state
 how fast cheetahs run ,NUM:speed
@@ -1509,7 +1509,7 @@ what book follow-up future shock ,ENTY:cremat
 what african animals known big five ,ENTY:animal
 what alphabet latin ,ENTY:letter
 what fear frogs ,ENTY:dismed
-city canada least-populated ,LOC:city
+which city canada least-populated ,LOC:city
 how old stevie wonder ,NUM:period
 who first taiwanese president ,HUM:ind
 who luke skywalker s father ,HUM:ind
@@ -1526,7 +1526,7 @@ what book aaron hass write ,ENTY:cremat
 what death toll eruption mount pinatubo ,NUM:other
 will millennium officially begin ,NUM:date
 who created comic strip   garfield  ,HUM:ind
-vietnamese terrorist now un delegate doonesbury ,HUM:ind
+which vietnamese terrorist now un delegate doonesbury ,HUM:ind
 what real time processing ,DESC:def
 what call imaginary line along top rocky mountains ,LOC:other
 what country s capital lagos ,LOC:country
@@ -1546,7 +1546,7 @@ what will happen sodium put water ,DESC:desc
 what s meaning uol ,DESC:def
 what future president became senate majority whip harry truman ,HUM:ind
 who architect central park ,HUM:ind
-operating system runs ibm-compatible machines ,ENTY:product
+which operating system runs ibm-compatible machines ,ENTY:product
 what dimensions ice hockey goal ,NUM:dist
 cnn s first broadcast ,NUM:date
 what signs country going recession ,ENTY:symbol
@@ -1571,7 +1571,7 @@ how increase biceps  size ,DESC:manner
 who richard nixon tender resignation ,HUM:ind
 who thucydides ,HUM:desc
 how element strontium purified ,DESC:manner
-following rock n roll stars  star  hollywood boulevard ,HUM:ind
+which following rock n roll stars  star  hollywood boulevard ,HUM:ind
 what tonsils ,DESC:reason
 what molecules include fluorine  sodium magnesium ,ENTY:substance
 what name ball game played mayans ,ENTY:sport
@@ -1587,11 +1587,11 @@ what tarantula eat ,ENTY:food
 what three secondary colors ,ENTY:color
 what name  sabrina  mean ,DESC:def
 who took conductor boston pops arthur fiedler s long reign ,HUM:ind
-what trials called followed world war ii ,ENTY:event
+what trials called which followed world war ii ,ENTY:event
 what hebephrenia ,DESC:def
 what nazi leader killed jail just executed war criminal ,HUM:ind
 what famous events happened march 27 ,ENTY:event
-company claimed  world s biggest toy store  ,HUM:gr
+which company claimed  world s biggest toy store  ,HUM:gr
 what brand number graces black label bottle jack daniel s ,NUM:other
 what call sons daughters first cousins ,ENTY:termeq
 what causes civil war ,DESC:reason
@@ -1671,7 +1671,7 @@ what  america s recessed-filter cigarette  ,ENTY:product
 what kind dog scooby doo ,ENTY:animal
 what function appendix ,DESC:reason
 what department store heir responsible raising three-ton safe underwater wreckage andrea doria ,HUM:ind
-sex twice likely contract leprosy ,ENTY:other
+which sex twice likely contract leprosy ,ENTY:other
 what first town chartered vermont ,LOC:city
 what state longest great lakes shoreline ,LOC:state
 what u.s. state ends g ,LOC:state
@@ -1749,7 +1749,7 @@ how many people live tokyo ,NUM:count
 what fruit-topped actress known brazilian bombshell ,HUM:ind
 what birds descendents ,ENTY:animal
 tutankhamun exhibit display u.s.  what moving company transported ,HUM:gr
-kevin costner movie involves sioux indians ,ENTY:cremat
+which kevin costner movie involves sioux indians ,ENTY:cremat
 who played title role favorite martian ,HUM:ind
 how scientific calculator work ,DESC:manner
 what fear fur ,ENTY:dismed
@@ -1798,14 +1798,14 @@ name south african diamond producer ,HUM:gr
 who made musical plea true school ,HUM:ind
 what french designer declared   jean destructor  dictator  destroying creativity. jean must stopped   ,HUM:ind
 what season setting shakespeare s midsummer night s dream ,NUM:date
-name band famous 1960 s .,HUM:gr
+name band which famous 1960 s .,HUM:gr
 what comedian banned ed sullivan show allegedly making obscene gesture show s host ,HUM:ind
 what country setting edgar allan poe s pit pendulum ,LOC:country
 what apollo 11 astronaut minded store armstrong aldrin made history ,HUM:ind
 what current ticket fare cairo barbados ,NUM:money
 what second highest mountain peak world ,LOC:mount
 what good little witch casper s girlfriend ,HUM:ind
-tennessee williams play one characters killed devoured mob starving children ,ENTY:cremat
+which tennessee williams play one characters killed devoured mob starving children ,ENTY:cremat
 what nickname frederick  holy roman emperor king germany ,HUM:ind
 what war potsdam conference follow ,ENTY:event
 what s common non-contagious disease world ,ENTY:dismed
@@ -1860,7 +1860,7 @@ what film steven spielberg s dog star main character s dog ,ENTY:cremat
 what different kinds contraceptives ,ENTY:dismed
 how old jeremy piven ,NUM:period
 what history yo-yos ,DESC:desc
-nba players jersey number 0 ,HUM:ind
+which nba players jersey number 0 ,HUM:ind
 what chocolate company gives one-pound kiss ,HUM:gr
 how one correctly pronounce  qigong  ,DESC:manner
 what fossilizes form coprolite ,ENTY:other
@@ -1949,7 +1949,7 @@ how long take typical american eat 23 quarts ice cream ,NUM:period
 what difference fruit vegetable ,DESC:desc
 what kind tree graces lebanon s flag ,ENTY:plant
 what tumbled marble ,DESC:def
-what various ways one can measure user satisfaction level ,ENTY:techmeth
+what various ways which one can measure user satisfaction level ,ENTY:techmeth
 what city sometimes called athens switzerland ,LOC:city
 where bocci originate ,LOC:other
 how light travel void space medium  wave   pulse  .,DESC:manner
@@ -1988,7 +1988,7 @@ what creature absolute fastest moving world  birds  mammals  etc.  ,ENTY:animal
 what date bastille day ,NUM:date
 what ioc abbreviation ,ABBR:exp
 what s proud claim fame young women who formed kappa alpha theta ,DESC:reason
-two products use tiger symbol ,ENTY:product
+which two products use tiger symbol ,ENTY:product
 where freidreich wilhelm ludwig leichhardt  prussian born explorer  go school ,LOC:other
 what color eyes sensitive light ,ENTY:color
 how much folic acid expectant mother get daily ,NUM:count
@@ -2007,7 +2007,7 @@ how impress guy ,DESC:manner
 what method called  cold fusion  create ,ENTY:techmeth
 princess diana prince charles get married ,NUM:date
 what determines value pearl ,ENTY:other
-country hitler rule ,LOC:country
+which country hitler rule ,LOC:country
 what name american ship sunk mine havana harbor  causing spanish-american war ,ENTY:veh
 who directed wild bunch ,HUM:ind
 what emblazoned jolly roger ,ENTY:other
@@ -2048,7 +2048,7 @@ what nationality jackson pollock ,LOC:country
 who invented game bowling ,HUM:ind
 what snakes new england ,ENTY:animal
 how many times larger life size statue liberty ,NUM:count
-what name country hitler ruled ,LOC:country
+what name country which hitler ruled ,LOC:country
 what group kidnaped patricia hearst ,HUM:gr
 how long human live ,NUM:period
 where can get u.s. economic statistics ,LOC:other
@@ -2056,7 +2056,7 @@ how many superbowls ers won ,NUM:count
 what mouse nt working fast s supposed ,DESC:desc
 what gandy dancer ,DESC:def
 who creator  muppets  ,HUM:ind
-following celebrities started show-biz career disc jockey ,HUM:ind
+which following celebrities started show-biz career disc jockey ,HUM:ind
 what triple crown-winning horse took 1973 belmont stakes 31 lengths ,ENTY:animal
 what s perfect score gymnastics exercise ,NUM:other
 what dot letter called ,ENTY:termeq
@@ -2089,7 +2089,7 @@ who greek god sea ,HUM:ind
 what well-known music personality father adopted son named hans christian henderson ,HUM:ind
 how measure heat sun ,DESC:manner
 people two different color eyes ,DESC:reason
-leg cat move left front leg walking - left rear right rear leg ,ENTY:body
+which leg cat move left front leg walking - left rear right rear leg ,ENTY:body
 first barbie produced ,NUM:date
 what s hardest substance human body ,ENTY:substance
 who first woman governor wyoming ,HUM:ind
@@ -2101,7 +2101,7 @@ name film won golden bear berlin film festival ,ENTY:cremat
 what s international lawn tennis challenge trophy usually called ,ENTY:termeq
 what year nylon stockings first go sale ,NUM:date
 what research expedition mountain climbing ,ENTY:sport
-flight fawaz younis commit air piracy hostage taking ,ENTY:veh
+which flight fawaz younis commit air piracy hostage taking ,ENTY:veh
 what 10 largest cities us ,LOC:city
 what wart ,DESC:def
 what spaceball played ,DESC:def
@@ -2191,7 +2191,7 @@ who holds nfl record touchdowns season ,HUM:ind
 what cards bullets ,ENTY:other
 what average age horse lives ,NUM:period
 what planet visit see bebrenia  arcadia  amazonis ,LOC:other
-language words ,ENTY:lang
+which language words ,ENTY:lang
 where natick ,LOC:other
 what j.r.r. tolkien book features gimli central character ,ENTY:cremat
 what brand white rum still made cuba ,ENTY:product
@@ -2252,13 +2252,13 @@ what civil war general wreaked havoc south marching georgia way sea ,HUM:ind
 who conservationist who served spokesperson post grape nuts ,HUM:ind
 what carpal tunnel syndrome ,DESC:def
 what ioc stand ,ABBR:exp
-area produces least acidic coffee ,LOC:other
+which area produces least acidic coffee ,LOC:other
 called  hamburger  ham ,DESC:reason
 what trademark washington redskin s fan ,ENTY:symbol
 cotton get caught belly buttons ,DESC:reason
 what suburban housewife mother three wrote feminine mystique ,HUM:ind
 how glacier form ,DESC:manner
-date ukrainians  christmas ,NUM:date
+which date ukrainians  christmas ,NUM:date
 what largest city world ,LOC:city
 what famed tennis tournament s men s singles title fred perry last englishman win ,ENTY:sport
 who whitcomb judson ,HUM:desc
@@ -2269,12 +2269,12 @@ what fuel airplanes use ,ENTY:substance
 name canine cartoon character huckleberry hound voice daws butler .,HUM:ind
 what palindromic mean ,DESC:def
 what baseball expression came nautical term ships sailing atlantic pacific panama canal ,DESC:desc
-state mark twain national forests ,LOC:state
+which state mark twain national forests ,LOC:state
 what oldest ethnological museum world ,LOC:other
 how belle describe life beauty beast ,DESC:manner
 what color flies closest staff belgium s flag ,ENTY:color
 what smallest thing seen powerful microscope  how big ,ENTY:other
-ear can people hear better ,ENTY:body
+which ear can people hear better ,ENTY:body
 where dinosaur remains found ,LOC:other
 what letter appears cold-water tap spain ,ENTY:letter
 how say  grandma  irish ,ENTY:termeq
@@ -2302,7 +2302,7 @@ what dick clark s birthday ,NUM:date
 what name clouds produce rain ,ENTY:termeq
 hitler come power germany ,NUM:date
 gothic art architecture flourish ,NUM:date
-two inventors invented post-its ,HUM:ind
+which two inventors invented post-its ,HUM:ind
 what day week july 13 ,NUM:date
 whose image alleged shroud turin ,HUM:ind
 what salk vaccine prevent ,ENTY:dismed
@@ -2359,7 +2359,7 @@ what acronym national bureau investigation ,ABBR:abb
 how marijuana lead drugs ,DESC:manner
 what father son won medal honor ,HUM:ind
 how many consecutive baseball games lou gehrig play ,NUM:count
-high schools included south florida ice hockey league ,HUM:gr
+which high schools included south florida ice hockey league ,HUM:gr
 how many different types skunks ,NUM:count
 who prophet medina ,HUM:ind
 what name salt lake city newspaper ,ENTY:cremat
@@ -2369,7 +2369,7 @@ what name woman who john belushi died ,HUM:ind
 what hyperopia ,DESC:def
 what color poker chip usually assigned lowest value ,ENTY:color
 what tourists visit reims ,LOC:other
-produces longer sperm - elephant mouse ,ENTY:animal
+which produces longer sperm - elephant mouse ,ENTY:animal
 what book can find story aladdin ,ENTY:cremat
 what united states city produces oil ,LOC:city
 how pronounce  tzimisce  ,DESC:manner
@@ -2385,7 +2385,7 @@ how names come ,DESC:manner
 what s better-known identity john merrick  noble ogre victorian england ,HUM:ind
 what husband s name ,HUM:ind
 what cigarette company urged us   come where flavor  ,HUM:gr
-following receive 1983  outstanding mother award  national mother s day committee ,HUM:ind
+which following receive 1983  outstanding mother award  national mother s day committee ,HUM:ind
 what dynasty star made 2th century-fox debut virgin queen ,HUM:ind
 where poe s birthplace ,LOC:other
 what actress holds record appearances cover life ,HUM:ind
@@ -2422,20 +2422,20 @@ where bill gates go college ,LOC:other
 what constellation known water bearer ,LOC:other
 what tale moral   who wants everything gets nothing  ,ENTY:cremat
 what u.s. university boasts largest library ,HUM:gr
-year cartoon character chilly willy created ,NUM:date
+which year cartoon character chilly willy created ,NUM:date
 what japanese school uniforms look like ,DESC:desc
 name salt lake city newspaper .,ENTY:cremat
 where can find history taiwanese language ,LOC:other
 what state mount mckinley ,LOC:state
 how people respond idea first millenium ,DESC:manner
-classical spanish writer said  glitters gold  ,HUM:ind
+which classical spanish writer said  glitters gold  ,HUM:ind
 what swap math ,DESC:def
 what hypnotherapy ,DESC:def
 what rcd ,ABBR:exp
 how large missouri s population ,NUM:other
-cats pursued tweety pie first cartoon appearance ,ENTY:animal
+which cats pursued tweety pie first cartoon appearance ,ENTY:animal
 what biblical meaning  stones  ,DESC:def
-organization security council part ,HUM:gr
+which organization security council part ,HUM:gr
 internal combustion engine developed ,NUM:date
 how can find biorhythm ,DESC:manner
 who painted  soft self-portrait grilled bacon  ,HUM:ind
@@ -2446,7 +2446,7 @@ who killed caesar ,HUM:ind
 where kings canyon ,LOC:other
 what words song sung  banana pajamas  ,DESC:desc
 organ transplants successful today ,DESC:reason
-most-used computer program ,ENTY:cremat
+which most-used computer program ,ENTY:cremat
 what root evil ,DESC:desc
 what animal best hearing ,ENTY:animal
 what time wee willie winkie run town ,NUM:date
@@ -2460,7 +2460,7 @@ who count cinzano ,HUM:desc
 who s won oscars costume design ,HUM:ind
 what ernest hemingway novel working title fiesta ,ENTY:cremat
 what color monopoly properties landed often ,ENTY:color
-beatles disc cover honors rolling stones ,ENTY:cremat
+which beatles disc cover honors rolling stones ,ENTY:cremat
 snow ,DESC:reason
 what average life expectancy male ireland 1996 ,NUM:period
 what  vocal sampling  ,DESC:def
@@ -2474,12 +2474,12 @@ what color  s  appear boxes kodak film ,ENTY:color
 where inuits live ,LOC:other
 what origin word trigonometry ,DESC:desc
 what compaq s mission statement ,DESC:desc
-what name 1899 policy forced china nations equal trading rights ,ENTY:other
+what name 1899 policy forced china which nations equal trading rights ,ENTY:other
 what british monarch s lap p.t. barnum s tom thumb sit ,HUM:ind
 how rocky marciano die ,DESC:manner
 who invented road traffic cone ,HUM:ind
 what name joan jett s band ,HUM:gr
-following people associated andy warhol ,HUM:ind
+which following people associated andy warhol ,HUM:ind
 what visine get ,ENTY:other
 what civilization invented arch ,HUM:gr
 what fun things cozumel  mexico teenagers ,DESC:desc
@@ -2497,7 +2497,7 @@ name two youngsters saved animated moby dick .,HUM:ind
 who captain tanker  exxon valdez  involved oil spill prince william sound  alaska  1989 ,HUM:ind
 what snowiest city u.s. ,LOC:city
 what crabgrass ,DESC:def
-what book opens   certain village la mancha  shall name.. .  ,ENTY:cremat
+what book opens   certain village la mancha  which shall name.. .  ,ENTY:cremat
 who stephen hawking ,HUM:desc
 what shield stand ,ABBR:exp
 how say   love  languages ,ENTY:termeq
@@ -2522,7 +2522,7 @@ name civil war battlefield .,LOC:other
 plant winter wheat ,NUM:date
 what will compass outer space ,DESC:desc
 how many counties indiana ,NUM:count
-college dikembe mutombo attend ,HUM:gr
+which college dikembe mutombo attend ,HUM:gr
 who first actress appear postage stamp ,HUM:ind
 who first black woman star folies bergeres ,HUM:ind
 what aesop s fable moral   race always swift. slow steady bound win  ,ENTY:cremat
@@ -2533,7 +2533,7 @@ what exchange rate england u.s. ,NUM:money
 what woman want ,ENTY:other
 what protection rate using condoms ,NUM:other
 what s abbreviation limited partnership ,ABBR:abb
-continent roses ,LOC:other
+which continent roses ,LOC:other
 what russian novel embracing 5 characters set napoleonic wars ,ENTY:cremat
 how write correct critical analysis poem ,DESC:manner
 how check modem v.9 compatible ,DESC:manner
@@ -2580,7 +2580,7 @@ who owns st. louis rams ,HUM:ind
 where former pro wrestler johnny  rubber man  walker ,LOC:other
 what beer tells us   grab gusto can get .  ,ENTY:food
 what geographical center us including alaska hawaii ,LOC:other
-side face artists tend show self-portraits ,ENTY:other
+which side face artists tend show self-portraits ,ENTY:other
 what diabetes ,DESC:def
 what phenomenon expect read monthly publication bigfoot news ,ENTY:event
 mormons believe christ born ,NUM:date
@@ -2615,7 +2615,7 @@ what longest english word can formed using just first row letters typewriter ,EN
 what chiricahua name ,ENTY:termeq
 what s green variety beryl called ,ENTY:termeq
 what name captain bligh s ship ,ENTY:veh
-heavier - cream milk ,ENTY:food
+which heavier - cream milk ,ENTY:food
 who said  thing fear fear  ,HUM:ind
 where romania located ,LOC:other
 how many films made major studios year ,NUM:count
@@ -2657,7 +2657,7 @@ what zionism ,DESC:def
 what cable network bills  family entertainer  ,HUM:gr
 how many points backgammon board ,NUM:count
 what let tennis ball volley ,DESC:desc
-comic book spawned directly pulp magazines ,ENTY:cremat
+which comic book spawned directly pulp magazines ,ENTY:cremat
 what product kids  silly rabbits ,ENTY:product
 what else swastika stood ,DESC:def
 people get goosebumps something emotional happen  like hear beautiful piece music  see something beautiful  get aroused someone love ,DESC:reason
@@ -2698,7 +2698,7 @@ what high school archie attend ,HUM:gr
 what animal migrates farthest ,ENTY:animal
 what film based play everybody comes rick s ,ENTY:cremat
 call someone  honey  ,DESC:reason
-madonna hocks soft drink ,ENTY:food
+madonna hocks which soft drink ,ENTY:food
 what television network flogged sports programming inga nielsen s body 197 ,HUM:gr
 what country lund ,LOC:country
 what s sequel alice s adventures wonderland ,ENTY:cremat
@@ -2926,7 +2926,7 @@ how many americans hiv ,NUM:count
 where find information foreclosure properties internet ,LOC:other
 who antichrist ,HUM:ind
 what first english play written exclusively children ,ENTY:cremat
-latin american country largest ,LOC:country
+which latin american country largest ,LOC:country
 what former residence scottish kings edinburgh ,LOC:other
 how many teats female goat sport ,NUM:count
 how tall kilamanjaro ,NUM:dist
@@ -2935,7 +2935,7 @@ what country buys 25 percent world s tea exports ,LOC:country
 what country origin band creeps ,LOC:country
 what crocodile swallow peter pan ,ENTY:other
 what origin word  mushroom  ,DESC:desc
-following celebrities born philadelphia ,HUM:ind
+which following celebrities born philadelphia ,HUM:ind
 what number american soldiers deployed south korea ,NUM:other
 where biggest bell ,LOC:other
 what brand name chemical daminozide ,ENTY:product
@@ -2945,7 +2945,7 @@ what estimated total u.s. whitetail deer population ,NUM:count
 who wrote farmer s almanac ,HUM:ind
 what animal received royal assent emblem canada march 24  1975 ,ENTY:animal
 what number 12 o clock dartboard ,NUM:other
-team won super bowl 1968 ,HUM:gr
+which team won super bowl 1968 ,HUM:gr
 what recommended daily requirement folic acid pregnant women ,DESC:desc
 what film dramatized scopes monkey trial ,ENTY:cremat
 cnn owned ,HUM:ind
@@ -2974,7 +2974,7 @@ name ranger who always yogi bear .,HUM:ind
 what tv show john sebastian sing theme ,ENTY:cremat
 who president spanish government ,HUM:ind
 who holds career record major league home runs ,HUM:ind
-following actors worked new york s yiddish theater ,HUM:ind
+which following actors worked new york s yiddish theater ,HUM:ind
 who invented stethoscope ,HUM:ind
 what mathematical factor ,DESC:def
 how many four star generals who ,NUM:count
@@ -3048,7 +3048,7 @@ what presidential administration challenged americans explore new frontier ,HUM:
 how many years sleeping beauty sleep ,NUM:count
 how long take body restore blood donate blood ,NUM:period
 how know someone truly love ,DESC:manner
-many numbered vats scotch judged best panel experts 1863 ,ENTY:food
+which many numbered vats scotch judged best panel experts 1863 ,ENTY:food
 what literary criticism ,DESC:def
 how throw housewarming party ,DESC:manner
 what international sport originally called hurley ,ENTY:sport
@@ -3063,7 +3063,7 @@ what rona barrett s married name ,HUM:ind
 how many years make lustrum ,NUM:count
 what close encounters first second kind ,ENTY:other
 who mathematician won noble prize literature 1950 ,HUM:ind
-glamorous actress close friend dick tracy ,HUM:ind
+which glamorous actress close friend dick tracy ,HUM:ind
 what 1956 grace metalious novel best-seller list two years ,ENTY:cremat
 name three races unleashed celestials marvel comics .,HUM:gr
 how old italian artist maurizio pellegrin ,NUM:period
@@ -3095,19 +3095,19 @@ how many rings five-zone archery target ,NUM:count
 what anesthetic queen victoria allow used birth seventh child  1853 ,ENTY:dismed
 what element  periodic table  gas solid  never liquid ,ENTY:substance
 what tonne ,DESC:def
-one great lakes entirely within u.s. territory ,LOC:other
+which one great lakes entirely within u.s. territory ,LOC:other
 what deet ,ABBR:exp
 what company sells greeting cards ,HUM:gr
 what u.s. state sagebrush state flower ,LOC:state
 what bernoulli principle ,DESC:def
 what s comic strip photographer peter parker s secret identity ,HUM:ind
 what difference poster print ,DESC:desc
-sport  scrum  ,ENTY:sport
+which sport  scrum  ,ENTY:sport
 what best ways improve employee morale low cost ,ENTY:techmeth
 what nationality pope john paul ii ,LOC:country
 what false consciousness ,DESC:def
 how great depression affect japan s history ,DESC:manner
-side bowler facing 37803 split hit 3-pin on-the left right ,ENTY:other
+which side bowler facing 37803 split hit 3-pin on-the left right ,ENTY:other
 where great educational resources parents teachers ,LOC:other
 how many israeli athletes killed munich olympics ,NUM:count
 what scotch  people who know difference  ,ENTY:termeq
@@ -3115,7 +3115,7 @@ richard nixon born ,NUM:date
 what new york city landmark 168 steps crown ,LOC:other
 where bulls basketball team based ,LOC:other
 what recomended age switch child crib bed ,NUM:period
-rockefeller sometimes called  jdr3  ,HUM:ind
+which rockefeller sometimes called  jdr3  ,HUM:ind
 sun closest earth ,NUM:date
 what chemical properties mendelevium ,DESC:desc
 what average hours per months spent online aol users ,NUM:count
@@ -3168,7 +3168,7 @@ what s male witch called ,ENTY:termeq
 how long cocaine stay system ,NUM:period
 what two countries fought hundred years  war ,LOC:country
 who last u.s. president reinstate selective service registration ,HUM:ind
-dates running bulls occur pamplona  spain ,NUM:date
+which dates running bulls occur pamplona  spain ,NUM:date
 what name lawyer who represented randy steven craft ,HUM:ind
 what happens used motor oil ,DESC:desc
 what commonly used 1 letter word english language ,ENTY:word
@@ -3183,7 +3183,7 @@ what war johnny reb billy yank fight ,ENTY:event
 who section manager guidance control systems jpl ,HUM:ind
 what goldfinger s first name ,HUM:ind
 what square geographical center london ,LOC:other
-following famous people paint hobby ,HUM:ind
+which following famous people paint hobby ,HUM:ind
 what populated city world ,LOC:city
 how many pitchers occupy shelf beside crouching woman edgar degas s 1886 painting tub ,NUM:count
 what cost drugs used tuberculosis treatments ,NUM:money
@@ -3211,7 +3211,7 @@ what country s royal house bourbon-parma ,LOC:country
 what film jude law ,ENTY:cremat
 who portrayed w.c. fields film w.c. fields ,HUM:ind
 what ceremony traditions like elizabethian times ,ENTY:other
-college dikembe mutombo play basketball ,HUM:gr
+which college dikembe mutombo play basketball ,HUM:gr
 what fear going bed ,ENTY:dismed
 where saying  rule thumb  come ,DESC:desc
 sound travel quicker water air ,DESC:reason
@@ -3336,7 +3336,7 @@ what idealab  ,DESC:def
 what country borders others ,LOC:country
 what e stand equation e=mc2 ,ABBR:exp
 what river runs colorado  kansas  oklahoma ,LOC:other
-airplane fawaz younis hijack ,ENTY:veh
+which airplane fawaz younis hijack ,ENTY:veh
 what win rah ,DESC:def
 moon different sizes colors ,DESC:reason
 what college enlivens hanover  new hampshire ,HUM:gr
@@ -3372,7 +3372,7 @@ what vermicilli  rigati  zitoni  tubetti ,DESC:def
 name product  grocer s  fingertips . ,ENTY:product
 what architect originated glass house designed chicago federal center philosophy  less   produced plans forerunner california ranch house ,HUM:ind
 how many russians landed moon ,NUM:count
-thrilled taste buds first - snickers 3 musketeers ,ENTY:food
+which thrilled taste buds first - snickers 3 musketeers ,ENTY:food
 what animal buffalo wings come ,ENTY:animal
 what purpose sysrq key computer keyboard ,DESC:reason
 franklin d. roosevelt stricken polio ,NUM:date
@@ -3387,7 +3387,7 @@ what s geographic term submerged fringe continent ,ENTY:termeq
 what prison found ossining  new york ,LOC:other
 what country declared one-fifth territory off-limits russians ,LOC:country
 what main application sodium hydrosulfite ,DESC:desc
-name story chris van allsburg boy tries become great sailor ,ENTY:cremat
+name story chris van allsburg which boy tries become great sailor ,ENTY:cremat
 what components polyester ,ENTY:other
 what product features frog says  dig em  ,ENTY:product
 who director intergovernmental affairs san diego county ,HUM:ind
@@ -3520,7 +3520,7 @@ what best art design school world ,HUM:gr
 what two vegetables combined succotash ,ENTY:food
 who incredible hulk reality ,HUM:ind
 what nasa stand ,ABBR:exp
-infectious disease kills people worldwide ,ENTY:dismed
+which infectious disease kills people worldwide ,ENTY:dismed
 what month edmund fitzgerald sink ,NUM:date
 what manufacturers texas ,HUM:gr
 who presidents mexico indonesia ,HUM:ind
@@ -3528,7 +3528,7 @@ who played al jolson jolson story ,HUM:ind
 what pig poke ,DESC:def
 where 196 summer olympics held ,LOC:other
 where los vegas ,LOC:other
-name country honecker lived .,LOC:country
+name country which honecker lived .,LOC:country
 what u.s. state finger lakes ,LOC:state
 what cullion ,DESC:def
 what ten safest american cities pedestrians ,LOC:city
@@ -3572,7 +3572,7 @@ what top 5 fiction books time ,ENTY:cremat
 what  star wars  satellites ,DESC:def
 who henry butler ,HUM:desc
 what debts qintex group leave ,NUM:money
-u.s. president buried washington  d.c. ,HUM:ind
+which u.s. president buried washington  d.c. ,HUM:ind
 what term someone who hates mankind ,ENTY:termeq
 what san francisco s milt harper grow measured 24 inches tip tip 1974 ,ENTY:other
 what college dikembe mutombo play basketball ,HUM:gr
@@ -3762,7 +3762,7 @@ what call book quotes ,ENTY:termeq
 how many points bullseye worth darts ,NUM:count
 what mythology websites ,LOC:other
 what cunnilingus ,DESC:def
-rotary engines manufactured company ,HUM:gr
+rotary engines manufactured which company ,HUM:gr
 what 1942 espionage movie reunited director john huston maltese falconers humphrey bogart  mary astor  sidney greenstreet ,ENTY:cremat
 what nationality ileana cotrubas ,LOC:country
 what object-oriented design ,DESC:def
@@ -3792,7 +3792,7 @@ how plastic made ,DESC:manner
 what 7 principles learning institute research learning  irl ,ENTY:techmeth
 what book f. scott fitzgerald working died hollywood 194 ,ENTY:cremat
 how ants sex ,DESC:manner
-former ku klux klan member won elected office u.s. ,HUM:ind
+which former ku klux klan member won elected office u.s. ,HUM:ind
 what length border ukraine russia ,NUM:dist
 what hdlc ,ABBR:exp
 what joins white wine put spritz spritzer ,ENTY:food
@@ -3894,7 +3894,7 @@ what peugeot company manufacture ,ENTY:product
 how many different countries export coffee ,NUM:count
 what fear everything ,ENTY:dismed
 how many continents ,NUM:count
-mayonnaise refers  real  mayonnaise ,ENTY:food
+which mayonnaise refers  real  mayonnaise ,ENTY:food
 what office automation ,DESC:def
 what instrument benny carter play ,ENTY:instru
 what knighted actor narrates tv s world war ,HUM:ind
@@ -3925,7 +3925,7 @@ how wasps make nests ,DESC:manner
 general manuel noriega ousted leader panama turned u.s. authorities ,NUM:date
 how many years bad luck follow breaking mirror ,NUM:count
 what kind crystals exist ,ENTY:substance
-best opening move chess ,ENTY:other
+which best opening move chess ,ENTY:other
 what ladybugs eat ,ENTY:food
 who ezra taft benson ,HUM:desc
 what taj majal made ,ENTY:substance
@@ -4018,7 +4018,7 @@ how much manchester united spend players 1993 ,NUM:money
 what birthplace edgar allen poe ,LOC:other
 red m&ms discontinued brought back ,DESC:reason
 what take become lawyer ,ENTY:other
-what american sergeant lost hands combat world war ii went act single movie won two oscars ,HUM:ind
+what american sergeant lost hands combat world war ii went act single movie which won two oscars ,HUM:ind
 who invented fountain ,HUM:ind
 what room w.c. fields keep library ,LOC:other
 what causes earthquake ,DESC:reason
@@ -4041,7 +4041,7 @@ how say  eat day  latin ,ENTY:termeq
 what super balls made ,ENTY:substance
 what s name tom sawyer s aunt lives ,HUM:ind
 what fastest-growing comic strip time ,ENTY:cremat
-member micronauts spent 1 years traveling microverse marvel comics ,HUM:ind
+which member micronauts spent 1 years traveling microverse marvel comics ,HUM:ind
 what doctor claimed 1946 book   thing bad boy  ,HUM:ind
 how long l.l. cool j. married ,NUM:period
 how much knight s armor weigh ,NUM:weight
@@ -4074,10 +4074,10 @@ how many pins used skittles ,NUM:count
 what qualifications individuals donating blood ,DESC:desc
 what california bridge don brown first cross  may 27  1937 ,LOC:other
 who famous sister actress olivia de havilland ,HUM:ind
-german president pressured appointing hitler chancellor 1933 ,HUM:ind
+which german president pressured appointing hitler chancellor 1933 ,HUM:ind
 how many people killed wars  armed conflicts ,NUM:count
 what history hairdryer ,DESC:desc
-mammal lives  breeds  eats  sleeps underground ,ENTY:animal
+which mammal lives  breeds  eats  sleeps underground ,ENTY:animal
 what trade 15th 16th century portuguese hope control asia europe ,ENTY:other
 what happened city dogtown 1899 ,DESC:desc
 what largest city world declare martial law 1989 ,LOC:city
@@ -4130,7 +4130,7 @@ what s capital monaco ,LOC:city
 what englishmen weigh ,NUM:weight
 how big electoral college ,NUM:volsize
 what walks four legs  two legs  three ,ENTY:other
-what name 1919 occurrence british troops killed 3 unarmed indian protestors ,ENTY:event
+what name 1919 occurrence which british troops killed 3 unarmed indian protestors ,ENTY:event
 who invented moog synthesizer ,HUM:ind
 who makes  die hard  car battery ,HUM:ind
 how long take travel tokyo niigata ,NUM:period
@@ -4415,14 +4415,14 @@ what title shevardnadze soviet era ,HUM:title
 what pyramid-builders egypt mainly eat ,ENTY:food
 what s international radio code word letter f ,ENTY:word
 what 28 tenses english language ,ENTY:other
-king signed magna carta ,HUM:ind
+which king signed magna carta ,HUM:ind
 what software offers inventors use cad-like design ,ENTY:cremat
 what agent orange ,DESC:def
 name child left doorstep beginning gasoline alley .,HUM:ind
 how many zip codes u.s. ,NUM:count
 beetle bailey  can name sarge s dog ,ENTY:animal
 shouldn t remove bee stinger tweezers ,DESC:reason
-college dikembe mutombo play basketball ,HUM:gr
+which college dikembe mutombo play basketball ,HUM:gr
 europeans first come australia oceania ,DESC:reason
 what confederate constitution say slavery ,DESC:desc
 how long take milky way galaxy make one revolution ,NUM:period
@@ -4464,7 +4464,7 @@ how many flavors baskin & robbins offer ,NUM:count
 who chief engineer starship enterprise ,HUM:ind
 how crosstalk relate insb thickness infrared detectors ,DESC:manner
 what mayor made many tv appearances asked join aftra 1984 ,HUM:ind
-type submarine bought recently south korea ,ENTY:veh
+which type submarine bought recently south korea ,ENTY:veh
 how much miles ten k run ,NUM:count
 beethoven born ,NUM:date
 who sexy celebrity ,HUM:ind
@@ -4477,7 +4477,7 @@ what name gulf sweden finland ,LOC:other
 who first x-man die battle ,HUM:ind
 what will weather today ,DESC:desc
 who president ghana ,HUM:ind
-sex denied voting rights kuwait ,ENTY:other
+which sex denied voting rights kuwait ,ENTY:other
 what two countries andorra nestled ,LOC:country
 how long ago roe vs. wade decision supreme court ,NUM:period
 what terrorist group headed donald defreeze ,HUM:gr
@@ -4544,7 +4544,7 @@ what southern california town named character made famous edgar rice burroughs ,
 how many colors rainbow ,NUM:count
 what habitat chickadee ,LOC:other
 what drug often used treat aids patients ,ENTY:dismed
-five senses develops first ,ENTY:other
+which five senses develops first ,ENTY:other
 where name root beer come ,DESC:desc
 what city s kickoff point climbs mount everest ,LOC:city
 what average salary paleontologist ,NUM:money
@@ -4561,7 +4561,7 @@ what acronym cpr mean ,ABBR:exp
 jewish alphabet called what ,ENTY:termeq
 what baltic states ,DESC:def
 how many endangered species world ,NUM:count
-large u.s. city highest murder rate 1988 ,LOC:city
+which large u.s. city highest murder rate 1988 ,LOC:city
 who bandleader mentor ella fitzgerald cowrote  a_tisket  a-tasket  ,HUM:ind
 who invented basketball ,HUM:ind
 how tv affected society ,DESC:manner
@@ -4572,7 +4572,7 @@ what osmosis ,DESC:def
 what format major competition vhs ,ENTY:other
 what hockey player ronald reagan joke swap texas ,HUM:ind
 what world s deadliest infectious disease ,ENTY:dismed
-infectious disease world s deadliest ,ENTY:dismed
+which infectious disease world s deadliest ,ENTY:dismed
 what president buried ancestral home overlooking hudson river hyde park  new york ,HUM:ind
 how much first barbie doll sell 1959 ,NUM:money
 what country general douglas mcarthur recalled president truman ,LOC:country
@@ -4613,7 +4613,7 @@ what s distinctive palmiped s feet ,DESC:desc
 139 papal court forced move rome where ,LOC:other
 what first day week ,NUM:date
 what goulash ,DESC:def
-what capital built around monument circle contains soldiers sailors monument ,LOC:city
+what capital built around monument circle which contains soldiers sailors monument ,LOC:city
 name men s cologne associated sea .,ENTY:other
 how parachute work ,DESC:manner
 what first book old testament ,ENTY:cremat
@@ -4687,10 +4687,10 @@ what common anti-aids drug ,ENTY:dismed
 who bestowed great power upon captain britain ,HUM:ind
 how can tell figs ripe ,DESC:manner
 how love thee ,DESC:manner
-type soda greatest amount caffeine ,ENTY:food
+which type soda greatest amount caffeine ,ENTY:food
 what nationality sicilian ,LOC:country
 what common boy s girl s name ,HUM:ind
-who accused trial century  opened janurary 1  1935 ,HUM:ind
+who accused trial century  which opened janurary 1  1935 ,HUM:ind
 what color hundred billionth crayon made crayola ,ENTY:color
 what soft drink tells us  go hawaiian  ,ENTY:food
 how hydroelectric dam work ,DESC:manner
@@ -4739,7 +4739,7 @@ what island target u.s. s operation urgent fury ,LOC:other
 what fear robbers ,ENTY:dismed
 what nevil shute novel doomed survivors nuclear war ,ENTY:cremat
 what cause endangered species ,DESC:reason
-following tv newsmen rhodes scholar ,HUM:ind
+which following tv newsmen rhodes scholar ,HUM:ind
 what warlock wear forehead marvel comics ,ENTY:other
 what softest part body ,ENTY:body
 what six-foot temperance advocate wielded hatchet saloons ,HUM:ind
@@ -4838,7 +4838,7 @@ what exactly purpose anteater ,DESC:reason
 what correct way use  may  vs.  might  ,ENTY:techmeth
 what north american city boasts biggest polish population ,LOC:city
 what radio  tv movie character jackie gleason william bendix play ,HUM:ind
-where planned berth merchant ship  lane victory  merchant marine veterans converting floating museum ,LOC:other
+where planned berth merchant ship  lane victory  which merchant marine veterans converting floating museum ,LOC:other
 what pedometer measure ,ENTY:other
 what maurizio pellegrin s age ,NUM:period
 how many thousands students attend university massachusetts ,NUM:count
@@ -4859,7 +4859,7 @@ airliners crash vs. gliding ,DESC:reason
 what little blue reflectors middle road ,DESC:reason
 what member little rascals on-again  off-again sweetheart darla hood ,HUM:ind
 how saline used medicine ,DESC:manner
-what name  female  counterpart el nino  results cooling temperatures dry weather ,ENTY:termeq
+what name  female  counterpart el nino  which results cooling temperatures dry weather ,ENTY:termeq
 what incident 1933 german nazis use justify emergency decrees  imprisoning opponents vesting power ,ENTY:event
 what country visiting land president duvalier airport ,LOC:country
 what attorney-general ordered closing alcatraz ,HUM:ind
@@ -4868,7 +4868,7 @@ what text fifth amendment ,DESC:desc
 what country starts letter x ,LOC:country
 what countries earn tourism ,LOC:country
 what internet2 ,DESC:def
-city china largest number foreign financial companies ,LOC:city
+which city china largest number foreign financial companies ,LOC:city
 oscars academy awards 1999 ,NUM:date
 who prophet jewish people ,HUM:ind
 what common name ,HUM:ind
@@ -4894,7 +4894,7 @@ name cartoon genie conjured magic ring shared nancy chuck .,HUM:ind
 what foods contain vitamin b12 ,ENTY:food
 what amount money owed illegally dog beach ,NUM:money
 what first last letters greek alphabet ,ENTY:letter
-what web address can find e-mail address member us house representatives ,LOC:other
+what web address which can find e-mail address member us house representatives ,LOC:other
 how big largest diamond ,NUM:volsize
 what ways help someone chicken pox ,ENTY:techmeth
 how find exact time sunset particular day ,DESC:manner
@@ -4902,7 +4902,7 @@ original howdy doody show go air ,NUM:date
 how many languages world ,NUM:count
 who picasso ,HUM:desc
 who two bald u.s. presidents ,HUM:ind
-member charlie s angels sang vocals josie pussycats ,HUM:ind
+which member charlie s angels sang vocals josie pussycats ,HUM:ind
 what river flows past temple karnak ,LOC:other
 what comedian perfect fool ,HUM:ind
 what benefits rowing machine ,DESC:desc
@@ -4918,7 +4918,7 @@ how asia get name ,DESC:manner
 what name u.s. navy gunboat film sand pebbles ,ENTY:veh
 where can get information original 13 us colonies ,LOC:other
 what disease drug sinemet used treatment ,ENTY:dismed
-what three ways wind created earth ,ENTY:techmeth
+what three ways which wind created earth ,ENTY:techmeth
 what gender allowed vote kuwait ,ENTY:other
 how many inches six feet tom selleck ,NUM:count
 what name disease actress hunter tylo s baby girl ,ENTY:dismed
@@ -4967,7 +4967,7 @@ what average date malls begin putting christmas holiday decorations ,NUM:date
 how many characters chinese alphabet ,NUM:count
 where burma ,LOC:other
 who wrote collector ,HUM:ind
-major diamond producer based south africa ,HUM:gr
+which major diamond producer based south africa ,HUM:gr
 who samuel johnsons s friend biographer ,HUM:ind
 what kind women gave sigmund freud erotic dreams ,HUM:ind
 what cleveland indians also called ,ENTY:termeq
@@ -4990,7 +4990,7 @@ what s men s par 455-yard golf hole ,NUM:other
 what four elements make 90 percent human body ,ENTY:substance
 how many countries ,NUM:count
 where marijuana entering united states come ,LOC:other
-stuart hamblen considered first singing cowboy medium ,ENTY:cremat
+stuart hamblen considered first singing cowboy which medium ,ENTY:cremat
 what steve rogers s profession s captain america ,HUM:title
 what common cancer ,ENTY:dismed
 who top 10 richest people world ,HUM:ind
@@ -5013,7 +5013,7 @@ what country boasts cawdor castle  glamis castle  blair castle ,LOC:country
 define spumante .,DESC:def
 what ph stand ,ABBR:exp
 what country mount everest ,LOC:country
-country largest country latin america ,LOC:country
+which country largest country latin america ,LOC:country
 name four horsemen apocalypse .,HUM:ind
 what geckos ,DESC:def
 what name book written aaron hass ,ENTY:cremat
@@ -5038,7 +5038,7 @@ who tramped florida looking fountain youth ,HUM:ind
 what name song dracula plays organ ,ENTY:cremat
 what two animals specifically mentioned noah s ark ,ENTY:animal
 what federal income tax ,DESC:def
-what name confederate mounted guerrilla group jesse james coleman younger ridden ,HUM:gr
+what name confederate mounted guerrilla group which jesse james coleman younger ridden ,HUM:gr
 what disease plagued europe  africa asia ,ENTY:dismed
 what card game can feature dealer s choice ,ENTY:sport
 how many american soldiers stationed south korea ,NUM:count
@@ -5061,10 +5061,10 @@ what bud stand ,ABBR:exp
 who one independent member congress ,HUM:ind
 what society ruled elders ,HUM:gr
 what two presidents u.s. published books poetry ,HUM:ind
-seven dwarfs comes first alphabetically ,HUM:ind
+which seven dwarfs comes first alphabetically ,HUM:ind
 what professional cricketer s son wrote war worlds 1898 ,HUM:ind
 what condiment dutch dip french fries ,ENTY:food
-comic strip never turned broadway musical ,ENTY:cremat
+which comic strip never turned broadway musical ,ENTY:cremat
 what war first submarine used ,ENTY:event
 cpr abbreviation what ,ABBR:exp
 how many inches apart adjacent pins tenpin bowling ,NUM:count
@@ -5091,7 +5091,7 @@ what bordering country due north costa rica ,LOC:country
 what morris west novel deals russian bishop who becomes pope ,ENTY:cremat
 what nation boarders mozambique ,LOC:country
 what ekg stand ,ABBR:exp
-olympic games year allowed nadia comaneci become popular ,NUM:date
+olympic games which year allowed nadia comaneci become popular ,NUM:date
 what tv talk-show host lends name line men s clothing ,HUM:ind
 what soft drink held national flavor poll 1967 ,ENTY:food
 colin powell famous what ,DESC:reason
@@ -5122,14 +5122,14 @@ what robert mean ,DESC:def
 how anti-locking brakes work ,DESC:manner
 what colors magenta made ,ENTY:color
 how chain command work inside us army apache helicopter ,DESC:manner
-medium hamblen first singing cowboy ,ENTY:cremat
+which medium hamblen first singing cowboy ,ENTY:cremat
 what name jamiroquai new album ,ENTY:cremat
 what hormone ,DESC:def
 what american naval officer broke japan s isolationist policy 1853 ,HUM:ind
 what fellatio ,DESC:def
 what characteristics contribute  intelligence  ,DESC:reason
 what significant battle fought belgium 1815 ,ENTY:event
-police department made all-time biggest cocaine bust ventura county ,HUM:gr
+which police department made all-time biggest cocaine bust ventura county ,HUM:gr
 who gave us  rolling writer  ,HUM:ind
 how days week named ,DESC:manner
 who wrote secret life walter mitty ,HUM:ind
@@ -5193,7 +5193,7 @@ where 1936 summer olympics held ,LOC:other
 what cathedral thomas becket murdered ,LOC:other
 curious george curious ,DESC:reason
 how u.s.a become involved barbary wars,DESC:manner
-kentucky horse park close american city ,LOC:city
+kentucky horse park close which american city ,LOC:city
 what store martha stewart advertise ,HUM:gr
 what know multicultural multilingual schools ,DESC:desc
 what origin u.s. army sergeant s stripes ,DESC:desc
@@ -5202,7 +5202,7 @@ where tree photosynthesis occur ,LOC:other
 what science fair projects 8th graders ,ENTY:event
 what strait links mediterranean sea atlantic ocean ,LOC:other
 what airport piccadilly subway line ,LOC:other
-police department made largest cocaine seizure ever ventura county ,HUM:gr
+which police department made largest cocaine seizure ever ventura county ,HUM:gr
 what color eight-ball pocket billiards ,ENTY:color
 what first ready-to-eat breakfast cereal ,ENTY:food
 what benny carter play ,ENTY:other
@@ -5221,7 +5221,7 @@ what company s trademark master s voice ,HUM:gr
 what pope inaugurated vatican international radio ,HUM:ind
 what director made one silent one sound version ten commandments ,HUM:ind
 swimming become commonplace ,NUM:date
-presidents usa masons ,HUM:ind
+which presidents usa masons ,HUM:ind
 who tallest u.s. president ,HUM:ind
 what largest museum world ,LOC:other
 how can enforce new rules group youngsters who allowed please .,DESC:manner
@@ -5361,7 +5361,7 @@ what origin thank notes ,DESC:desc
 who used auh2o election slogan ,HUM:ind
 how long pay back debt claiming chapter 11 bankruptcy ,NUM:period
 what shakespearean play featured shylock ,ENTY:cremat
-magazine  fine entertainment men  ,ENTY:cremat
+which magazine  fine entertainment men  ,ENTY:cremat
 roosters sing five o clock morning ,DESC:reason
 what features african elephant larger indian elephant ,DESC:desc
 what ocean surrounds maldive islands ,LOC:other
@@ -5379,7 +5379,7 @@ what poetic meter blank verse ,DESC:def
 rotary engine cars made what company ,HUM:gr
 who lawyer who represented randy steven craft ,HUM:ind
 what history soft drink mr. pibb ,DESC:desc
-real berry  blackberry  cranberry  raspberry  strawberry ,ENTY:food
+which real berry  blackberry  cranberry  raspberry  strawberry ,ENTY:food
 what materials three little pigs use build houses ,ENTY:substance
 what part benjamin franklin play development newspaper america ,HUM:ind
 microsoft established ,NUM:date
@@ -5391,7 +5391,7 @@ who prime minister australia ,HUM:ind
 what southern states u.s. ,LOC:state
 what river seine empty ,LOC:other
 what people use freshen breath toothpaste ,ENTY:other
-airplane fawaz younis convicted hijacking ,ENTY:veh
+which airplane fawaz younis convicted hijacking ,ENTY:veh
 what state anita bryant represent 1959 miss america contest ,LOC:state
 how many soldiers involved last panama invasion united states america ,NUM:count
 describe long march .,DESC:desc
