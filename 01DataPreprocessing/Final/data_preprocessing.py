@@ -12,6 +12,7 @@ stop_words.remove("how")
 stop_words.remove("who")
 stop_words.remove("where")
 stop_words.remove("which")
+stop_words.remove("why")
 input = open('train_5500.label','r')
 punctuation = '!,;:?"\'`'
 
