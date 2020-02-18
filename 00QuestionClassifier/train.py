@@ -8,9 +8,9 @@ class Train:
         self.model_f = model_f
 
     def train(self):
-        read_config = open(self.cfg_f,'r')
-        config = dict(read_config.read())
 
-        prpr = Preprocess(self.tr_f)
+        
+        print("ok")
+        prpr = Preprocess(self.tr_f,self.cfg_f).preprocess()
         
         

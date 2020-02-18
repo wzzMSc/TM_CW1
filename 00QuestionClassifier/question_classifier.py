@@ -12,6 +12,6 @@ parser.add_argument('-test_file',type=str,help="test_file_path")
 args = parser.parse_args()
 
 if args.phase == 'train':
-    Train(args.train_file,args.model,args.config_file,args.model_file)
+    Train(args.train_file,args.model,args.config_file,args.model_file).train()
 if args.phase == 'test':
     Test(args.model_file,args.model,args.test_file)
