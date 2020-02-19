@@ -140,7 +140,7 @@ class Preprocess:
         # sens_rep = np.array(pd.read_csv('sens_rep.csv'))
         # labels_rep = np.array(pd.read_csv('labels_rep.csv'))
         # return label.tolist(),sentences.tolist(),vocabulary.tolist(),voca_embs.tolist(),sens_rep.tolist(),labels_rep.tolist()
-        return self.load('labels.bin'),self.load('sentences.bin'),self.load('vocabulary.bin'),self.load('voca_embs.bin'),self.load('sens_rep.bin'),self.load('labels_rep.bin')
+        return self.load('labels.bin'),self.load('sentences.bin'),self.load('vocabulary.bin'),self.load('voca_embs.bin'),self.load('sens_rep.bin'),self.load('labels_index.bin'),self.load('labels_rep.bin')
 
     def save(self,l,f_name):
         pickle.dump(l,open(f_name,'wb'))
