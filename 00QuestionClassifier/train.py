@@ -8,9 +8,12 @@ class Train:
         self.model_f = model_f
 
     def train(self):
-
-        
-        print("ok")
-        prpr = Preprocess(self.tr_f,self.cfg_f).preprocess()
-        
+        prpr = Preprocess(self.tr_f,self.cfg_f)
+        # prpr.preprocess()
+        labels,sentences,vocabulary,voca_embs,sens_rep,labels_rep = prpr.load_preprocessed()
+        # for sen_rep in sens_rep:
+        #     print(sen_rep)
+        # for element in prpr.load_preprocessed():
+        #     for i in range(5):
+        #         print(element[i])
         
