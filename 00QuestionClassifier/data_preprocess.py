@@ -54,18 +54,18 @@ class Preprocess:
         wcd_sorted = list(words_count_dict.items())
         wcd_sorted.sort(key=lambda x:x[1],reverse=True)
 
-        read_config = open(self.config,'r')
-        config_dict = dict()
-        for line in read_config.readlines():
-            split = line.split()
-            config_dict[split[0]] = split[1]
+        # read_config = open(self.config,'r')
+        # config_dict = dict()
+        # for line in read_config.readlines():
+        #     split = line.split()
+        #     config_dict[split[0]] = split[1]
 
         # print(type(config_dict))
         for word_count in wcd_sorted:
-            if word_count[1]>int(config_dict['min_words']):
+            if word_count[1]>int(self.config['min_words']):
                 vocabulary.append(word_count[0]) # form vocabulary in the order of word count
         
-        emb = kv.load_word2vec_format(config_dict['word_embeddings_path'],binary=True)
+        emb = kv.load_word2vec_format(self.config['word_embeddings_path'],binary=True)
         voca_embs = list()
         for word in vocabulary:
             try:

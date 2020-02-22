@@ -18,7 +18,7 @@ class Train:
             config_dict[split[0]] = split[1]
 
         
-        prpr = Preprocess(self.tr_f,self.cfg_f)
+        prpr = Preprocess(self.tr_f,config_dict)
         # prpr.preprocess()
         labels,sentences,vocabulary,voca_embs,sens_rep,labels_index,labels_rep = prpr.load_preprocessed()
         # for sen_rep in sens_rep:
