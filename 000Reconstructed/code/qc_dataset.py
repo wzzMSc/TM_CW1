@@ -1,9 +1,8 @@
 from torch.utils.data import Dataset
 
 class QCDataset(Dataset):
-    def __init__(self,data,label):
-        self.data = data
-        self.label = label
+    def __init__(self,xy):
+        self.data,self.label = xy
 
     def __getitem__(self, index):
         return self.data[index],self.label[index]

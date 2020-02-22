@@ -14,7 +14,7 @@ class Train:
 
         
         prpr = Preprocess(self.config)
-        prpr.preprocess()
+        # prpr.preprocess()
         labels,sentences,vocabulary,voca_embs,sens_rep,labels_index,labels_rep = prpr.load_preprocessed()
         # for element in prpr.load_preprocessed():
         #     for i in range(5):
@@ -52,11 +52,15 @@ class Train:
         # print(len(dev_set))
         # print(len(test_set))
 
-        qc_train = QCDataset(x_train,y_train)
+        xy_train = (x_train,y_train)
+        xy_dev = (x_dev,y_dev)
+        xy_test = (x_test,y_test)
+
+        qc_train = QCDataset(xy_train)
         loader_train = DataLoader(qc_train,batch_size=int(self.config["batch_size"]),collate_fn=self.qc_collate_fn)
-        qc_dev = QCDataset(x_dev,y_dev)
+        qc_dev = QCDataset(xy_dev)
         loader_dev = DataLoader(qc_dev,batch_size=int(self.config["batch_size"]),collate_fn=self.qc_collate_fn)
-        qc_test = QCDataset(x_test,y_test)
+        qc_test = QCDataset(xy_test)
         loader_test = DataLoader(qc_test,batch_size=int(self.config["batch_size"]),collate_fn=self.qc_collate_fn)
 
         if(self.config["model"] =='bow'):
@@ -94,10 +98,10 @@ class Train:
     def qc_collate_fn(self,QCDataset):
         length,data,label = [],[],[]
         for dataset in QCDataset:
-            length.append(len(dataset[0]))
             data.append(dataset[0])
             label.append(dataset[1])
-        data = torch.nn.utils.rnn.pad_sequence(data,padding_value=0)
+            length.append(len(dataset[0]))
+        data = torch.nn.utils.rnn.pad_sequence(data,padding_value=1)
         return data,label,length
 
     def get_accuracy(self,model,loader):
