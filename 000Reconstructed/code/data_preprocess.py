@@ -5,6 +5,7 @@ import re
 # from gensim.models import KeyedVectors as kv
 import numpy as np
 import pickle
+import torch
 
 
 class Preprocess:
@@ -67,7 +68,7 @@ class Preprocess:
         with open(self.config['path_pre_emb'],'r') as f:
             for line in f.readlines():
                 line_list = line.split()
-                emb[line_list[0]] = line_list[1:]
+                emb[line_list[0]] = np.array([float(val) for val in line_list[1:]])
         voca_embs = list()
         for word in vocabulary:
             try:
@@ -89,7 +90,7 @@ class Preprocess:
                     sen_rep.append(vocabulary.index(word))
                 else:
                     sen_rep.append(len(voca_embs)-1)
-            sens_rep.append(sen_rep)
+            sens_rep.append(torch.tensor(sen_rep)) #CUDA
 
         labels_index = dict()
         count=0

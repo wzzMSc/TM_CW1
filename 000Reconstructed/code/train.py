@@ -8,12 +8,13 @@ from torch.utils.data.dataloader import DataLoader
 class Train:
     def __init__(self,config):
         self.config = config
+        # print(config)
 
     def train(self):
 
         
         prpr = Preprocess(self.config)
-        # prpr.preprocess()
+        prpr.preprocess()
         labels,sentences,vocabulary,voca_embs,sens_rep,labels_index,labels_rep = prpr.load_preprocessed()
         # for element in prpr.load_preprocessed():
         #     for i in range(5):
@@ -51,7 +52,62 @@ class Train:
         # print(len(dev_set))
         # print(len(test_set))
 
-        # x_train,x_dev,x_test = torch.utils.data.random_split(sens_rep,[train_size,dev_size,test_size])
-        # y_train,y_dev,y_test = torch.utils.data.random_split(labels_rep,[train_size,dev_size,test_size])
+        qc_train = QCDataset(x_train,y_train)
+        loader_train = DataLoader(qc_train,batch_size=int(self.config["batch_size"]),collate_fn=self.qc_collate_fn)
+        qc_dev = QCDataset(x_dev,y_dev)
+        loader_dev = DataLoader(qc_dev,batch_size=int(self.config["batch_size"]),collate_fn=self.qc_collate_fn)
+        qc_test = QCDataset(x_test,y_test)
+        loader_test = DataLoader(qc_test,batch_size=int(self.config["batch_size"]),collate_fn=self.qc_collate_fn)
 
-        # model = BOW_FFNN(voca_embs,int(config['hidden_size']),len(labels_index),bool(config['freeze']))
+        if(self.config["model"] =='bow'):
+            model = BOW_FFNN(torch.FloatTensor(voca_embs),int(self.config['hidden_size']),len(labels_index),bool(self.config['freeze'])) # CUDA*2
+        criterion = torch.nn.CrossEntropyLoss()
+        optimizer = torch.optim.SGD(model.parameters(),float(self.config['lr_param']))
+
+        model.train()
+        early_stopping,best_acc = 0,0
+        for epoch in range(int(self.config['epoch'])):
+            for data,label,length in loader_train:
+                optimizer.zero_grad()
+                y_pred = model(data,length)
+                loss = criterion(y_pred,torch.tensor(label)) #CUDA
+                print('Epoch {} :train loss: {}'.format(epoch, loss.item()))
+                loss.backward()
+                optimizer.step()
+                acc = self.get_accuracy(model, loader_dev)
+                if acc > best_acc:
+                    best_acc = acc
+                    early_stopping = 0
+                else :
+                    early_stopping += 1
+                if early_stopping >= int(self.config["early_stopping"]):
+                    print("Early stopping!")
+                    break
+
+        torch.save(model, self.config["path_model"])
+        acc = self.get_accuracy(model, loader_dev)
+        print( "The accuray after training is : " , acc )
+
+        print("Test:",self.get_accuracy(model,loader_test))
+
+
+    def qc_collate_fn(self,QCDataset):
+        length,data,label = [],[],[]
+        for dataset in QCDataset:
+            length.append(len(dataset[0]))
+            data.append(dataset[0])
+            label.append(dataset[1])
+        data = torch.nn.utils.rnn.pad_sequence(data,padding_value=0)
+        return data,label,length
+
+    def get_accuracy(self,model,loader):
+        count = 0
+        length =0
+        with torch.no_grad():
+            for x, y, lengths in loader:
+                y_preds = model(x,lengths).argmax(dim=1)
+                count += np.sum(y_preds.numpy() == y) #CUDA .cpu()
+                length += len(y)
+            # compute the accuracy
+        acc = count/length
+        return acc

@@ -11,6 +11,16 @@ class BOW_FFNN(nn.Module):
         self.freeze = freeze
         self.bow = nn.EmbeddingBag.from_pretrained(embeddings,self.freeze,mode='mean')
         self.ffnn = FFNN(self.input_size,self.hidden_size,self.output_size)
+        self.log_softmax = nn.LogSoftmax(dim = 1)
 
-    def forward(self,input):
-        return nn.functional.log_softmax(self.ffnn(self.bow(input,torch.LongTensor([0]))))
+    def forward(self, inp, lengths):
+        batch = []
+        offsets = []
+        offset = 0
+        for idx, data in enumerate(inp.transpose(0,1)):
+            batch += data[:lengths[idx]]
+            offsets.append(offset)
+            offset += lengths[idx]
+        vec = self.bow(torch.tensor(batch), torch.tensor(offsets)) #CUDA
+        ffnn = self.ffnn(vec)
+        return self.log_softmax(ffnn)
