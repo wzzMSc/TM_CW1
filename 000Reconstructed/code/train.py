@@ -1,7 +1,9 @@
 from data_preprocess import Preprocess
 import numpy as np
 import torch
-from bow_ffnn import BOW_FFNN
+from bow_ffnn_pretrained import BOW_FFNN_PRE
+from bow_ffnn_random import BOW_FFNN_RANDOM
+from bilstm_ffnn_pretrained import BiLSTM_FFNN_PRE
 from qc_dataset import QCDataset
 from torch.utils.data.dataloader import DataLoader
 
@@ -63,10 +65,21 @@ class Train:
         qc_test = QCDataset(xy_test)
         loader_test = DataLoader(qc_test,batch_size=int(self.config["batch_size"]),collate_fn=self.qc_collate_fn)
 
-        if(self.config["model"] =='bow'):
-            model = BOW_FFNN(torch.FloatTensor(voca_embs),int(self.config['hidden_size']),len(labels_index),bool(self.config['freeze'])) # CUDA*2
+        if(self.config["model"] == 'bow' and bool(self.config['from_pretrained']) == True):
+            model = BOW_FFNN_PRE(torch.FloatTensor(voca_embs),int(self.config['hidden_size']),len(labels_index),bool(self.config['freeze'])) # CUDA*2
+        if(self.config["model"] == 'bow' and bool(self.config['from_pretrained']) == False):
+            model = BOW_FFNN_RANDOM(len(vocabulary),int(self.config['word_embedding_dim']),int(self.config['hidden_size']),len(labels_index),bool(self.config['freeze']))
+        if(self.config["model"] == 'bilstm' and bool(self.config['from_pretrained']) == True):
+            model = BiLSTM_FFNN_PRE(torch.FloatTensor(voca_embs),int(self.config['bilstm_hidden_size']),int(self.config['hidden_size']),len(labels_index),bool(self.config['freeze']))
+
+
+
+
+
+
+
         criterion = torch.nn.CrossEntropyLoss()
-        optimizer = torch.optim.SGD(model.parameters(),float(self.config['lr_param']))
+        optimizer = torch.optim.SGD(model.parameters(),float(self.config['lr_param']),float(self.config['lr_momentum']))
 
         model.train()
         early_stopping,best_acc = 0,0
