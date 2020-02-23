@@ -79,21 +79,23 @@ class Train:
 
 
         criterion = torch.nn.CrossEntropyLoss()
-        optimizer = torch.optim.SGD(model.parameters(),float(self.config['lr_param']),float(self.config['lr_momentum']))
+        optimizer = torch.optim.SGD(model.parameters(),float(self.config['lr_param']),float(self.config['sgd_momentum']))
 
         model.train()
-        early_stopping,best_acc = 0,0
+        early_stopping,best_accuracy = 0,0
         for epoch in range(int(self.config['epoch'])):
+            batch = 0
             for data,label,length in loader_train:
                 optimizer.zero_grad()
                 y_pred = model(data,length)
                 loss = criterion(y_pred,torch.tensor(label)) #CUDA
-                print('Epoch {} :train loss: {}'.format(epoch, loss.item()))
+                print('Epoch {}, batch {}, best accuracy: {}'.format(epoch+1, batch, best_accuracy))
+                batch += 1
                 loss.backward()
                 optimizer.step()
                 acc = self.get_accuracy(model, loader_dev)
-                if acc > best_acc:
-                    best_acc = acc
+                if acc > best_accuracy:
+                    best_accuracy = acc
                     early_stopping = 0
                 else :
                     early_stopping += 1
