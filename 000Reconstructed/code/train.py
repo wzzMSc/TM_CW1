@@ -71,8 +71,8 @@ class Train:
             model = BOW_FFNN_RANDOM(len(vocabulary),int(self.config['word_embedding_dim']),int(self.config['hidden_size']),len(labels_index),bool(self.config['freeze']))
         if(self.config["model"] == 'bilstm' and bool(self.config['from_pretrained']) == True):
             model = BiLSTM_FFNN_PRE(torch.FloatTensor(voca_embs),int(self.config['bilstm_hidden_size']),int(self.config['hidden_size']),len(labels_index),bool(self.config['freeze']))
-
-
+        if(self.config["model"] == 'bilstm' and bool(self.config['from_pretrained']) == False):
+            model = BOW_FFNN_RANDOM(len(vocabulary),int(self.config['word_embedding_dim']),int(self.config['bilstm_hidden_size']),int(self.config['hidden_size']),len(labels_index),bool(self.config['freeze']))
 
 
 

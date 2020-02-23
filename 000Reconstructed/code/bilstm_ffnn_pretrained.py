@@ -7,14 +7,14 @@ class BiLSTM_FFNN_PRE(nn.Module):
         super(BiLSTM_FFNN_PRE, self).__init__()
         _, self.input_size = embeddings.size()
         self.bilstm_hidden_size = bilstm_hidden_size
-        self.fnn_hidden_size = ffnn_hidden_size
-        self.fnn_output_size = ffnn_output_size
+        self.ffnn_hidden_size = ffnn_hidden_size
+        self.ffnn_output_size = ffnn_output_size
         self.freeze = freeze
 
         self.embeddingLayer = nn.Embedding.from_pretrained(embeddings, self.freeze)
         
         self.bilstm = nn.LSTM(self.input_size,self.bilstm_hidden_size, bidirectional=True)
-        self.fnn = FFNN(self.bilstm_hidden_size*2,self.fnn_hidden_size, self.fnn_output_size)
+        self.ffnn = FFNN(self.bilstm_hidden_size*2,self.ffnn_hidden_size, self.ffnn_output_size)
         self.log_softmax = nn.LogSoftmax(dim=1)
 
     def forward(self, data, lengths):
@@ -26,5 +26,5 @@ class BiLSTM_FFNN_PRE(nn.Module):
         packed_output,_ = self.bilstm(pack)
         output,_ = torch.nn.utils.rnn.pad_packed_sequence(packed_output)
         vec = output.mean(dim=0)
-        fnn = self.fnn(vec)
-        return self.log_softmax(fnn)
+        ffnn = self.ffnn(vec)
+        return self.log_softmax(ffnn)
