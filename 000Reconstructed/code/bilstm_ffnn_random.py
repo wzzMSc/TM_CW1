@@ -27,6 +27,10 @@ class BiLSTM_FFNN_RANDOM(nn.Module):
         )
         packed_output,_ = self.bilstm(pack)
         output,_ = torch.nn.utils.rnn.pad_packed_sequence(packed_output)
-        vec = output.mean(dim=0)
+        for i in range(output.size()[1]):
+            if i==0:
+                vec = output.index_select(1,torch.tensor(i)).squeeze(1).index_select(0,torch.tensor(lengths[i]-1)).mean(dim=0).unsqueeze(0)
+            else:
+                vec = torch.cat((vec,output.index_select(1,torch.tensor(i)).squeeze(1).index_select(0,torch.tensor(lengths[i]-1)).mean(dim=0).unsqueeze(0)),0)
         ffnn = self.ffnn(vec)
         return self.log_softmax(ffnn)
