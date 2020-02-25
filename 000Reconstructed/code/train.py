@@ -73,8 +73,8 @@ class Train:
             loader_train = DataLoader(qc_train,batch_size=int(self.config["batch_size"]),collate_fn=self.qc_collate_fn_bow)
             qc_dev = QCDataset(xy_dev)
             loader_dev = DataLoader(qc_dev,batch_size=int(self.config["batch_size"]),collate_fn=self.qc_collate_fn_bow)
-
-            model = BOW_FFNN_RANDOM(len(vocabulary),int(self.config['word_embedding_dim']),\
+            # I don't know why, but +1 works
+            model = BOW_FFNN_RANDOM(len(vocabulary)+1,int(self.config['word_embedding_dim']),\
                 int(self.config['hidden_size']),len(labels_index),bool(self.config['freeze']=="True"))
 
         if(self.config["model"] == 'bilstm' and bool(self.config['from_pretrained'] == "True")):
@@ -92,7 +92,7 @@ class Train:
             qc_dev = QCDataset(xy_dev)
             loader_dev = DataLoader(qc_dev,batch_size=int(self.config["batch_size"]),collate_fn=self.qc_collate_fn_bilstm)
 
-            model = BOW_FFNN_RANDOM(len(vocabulary),int(self.config['word_embedding_dim']),\
+            model = BOW_FFNN_RANDOM(len(vocabulary)+1,int(self.config['word_embedding_dim']),\
                 int(self.config['bilstm_hidden_size']),int(self.config['hidden_size']),len(labels_index),bool(self.config['freeze']=="True"))
 
 

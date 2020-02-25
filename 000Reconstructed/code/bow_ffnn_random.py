@@ -5,6 +5,7 @@ from ffnn import FFNN
 class BOW_FFNN_RANDOM(nn.Module):
     def __init__(self, voca_size, input_size, hidden_size, output_size, freeze = True):
         super(BOW_FFNN_RANDOM,self).__init__()
+        self.input_size = input_size
         self.hidden_size = hidden_size
         self.output_size = output_size
         self.freeze = freeze
