@@ -15,16 +15,16 @@ class BOW_FFNN_PRE(nn.Module):
         self.ffnn = FFNN(self.input_size,self.hidden_size,self.output_size)
         self.log_softmax = nn.LogSoftmax(dim = 1)
 
-    def forward(self, input, lengths):
-        input = input.transpose(0,1)
+    def forward(self, input):
         batch = list()
         offsets = list()
         offset = 0
-        for i in range(input.size()[0]):
-            batch += input[i][:lengths[i]]
+        for i in range(len(input)):
+            batch += input[i]
             offsets.append(offset)
-            offset += lengths[i]
+            offset += len(input[i])
 
-        vec = self.bow(torch.tensor(batch), torch.tensor(offsets)) #CUDA
+
+        vec = self.bow(torch.tensor(batch),torch.tensor(offsets)) #CUDA
         ffnn = self.ffnn(vec)
         return self.log_softmax(ffnn)
