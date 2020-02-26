@@ -5,12 +5,13 @@ from bow_ffnn_pretrained import BOW_FFNN_PRE
 from bow_ffnn_random import BOW_FFNN_RANDOM
 from bilstm_ffnn_pretrained import BiLSTM_FFNN_PRE
 from qc_dataset import QCDataset
+from collate import qc_collate_fn_bilstm,qc_collate_fn_bow
+from evaluation import get_accuracy_bow,get_accuracy_bilstm
 from torch.utils.data.dataloader import DataLoader
 
 class Train:
     def __init__(self,config):
         self.config = config
-        # print(config)
 
     def train(self):
 
@@ -43,14 +44,6 @@ class Train:
             y_dev.append(dev_set[i][1])
 
         
-        # print(x_train[0])
-        # print(y_train[0])
-        # print(merged_rep.index([[1, 4, 1474, 1474, 284, 1474, 1474],13]))
-        # print(merged_rep[4461])
-        # print(len(merged_rep))
-        # print(len(train_set))
-        # print(len(dev_set))
-        # print(len(test_set))
 
         xy_train = (x_train,y_train)
         xy_dev = (x_dev,y_dev)
@@ -61,42 +54,39 @@ class Train:
 
         if(self.config["model"] == 'bow' and bool(self.config['from_pretrained'] == "True")):
             qc_train = QCDataset(xy_train)
-            loader_train = DataLoader(qc_train,batch_size=int(self.config["batch_size"]),collate_fn=self.qc_collate_fn_bow)
+            loader_train = DataLoader(qc_train,batch_size=int(self.config["batch_size"]),collate_fn=qc_collate_fn_bow)
             qc_dev = QCDataset(xy_dev)
-            loader_dev = DataLoader(qc_dev,batch_size=int(self.config["batch_size"]),collate_fn=self.qc_collate_fn_bow)
+            loader_dev = DataLoader(qc_dev,batch_size=int(self.config["batch_size"]),collate_fn=qc_collate_fn_bow)
 
             model = BOW_FFNN_PRE(torch.FloatTensor(voca_embs),\
                 int(self.config['hidden_size']),len(labels_index),bool(self.config['freeze']=="True"))
 
         if(self.config["model"] == 'bow' and bool(self.config['from_pretrained'] == "False")):
             qc_train = QCDataset(xy_train)
-            loader_train = DataLoader(qc_train,batch_size=int(self.config["batch_size"]),collate_fn=self.qc_collate_fn_bow)
+            loader_train = DataLoader(qc_train,batch_size=int(self.config["batch_size"]),collate_fn=qc_collate_fn_bow)
             qc_dev = QCDataset(xy_dev)
-            loader_dev = DataLoader(qc_dev,batch_size=int(self.config["batch_size"]),collate_fn=self.qc_collate_fn_bow)
+            loader_dev = DataLoader(qc_dev,batch_size=int(self.config["batch_size"]),collate_fn=qc_collate_fn_bow)
             # I don't know why, but +1 works
             model = BOW_FFNN_RANDOM(len(vocabulary)+1,int(self.config['word_embedding_dim']),\
                 int(self.config['hidden_size']),len(labels_index),bool(self.config['freeze']=="True"))
 
         if(self.config["model"] == 'bilstm' and bool(self.config['from_pretrained'] == "True")):
             qc_train = QCDataset(xy_train)
-            loader_train = DataLoader(qc_train,batch_size=int(self.config["batch_size"]),collate_fn=self.qc_collate_fn_bilstm)
+            loader_train = DataLoader(qc_train,batch_size=int(self.config["batch_size"]),collate_fn=qc_collate_fn_bilstm)
             qc_dev = QCDataset(xy_dev)
-            loader_dev = DataLoader(qc_dev,batch_size=int(self.config["batch_size"]),collate_fn=self.qc_collate_fn_bilstm)
+            loader_dev = DataLoader(qc_dev,batch_size=int(self.config["batch_size"]),collate_fn=qc_collate_fn_bilstm)
             
             model = BiLSTM_FFNN_PRE(torch.FloatTensor(voca_embs),\
                 int(self.config['bilstm_hidden_size']),int(self.config['hidden_size']),len(labels_index),bool(self.config['freeze']=="True"))
 
         if(self.config["model"] == 'bilstm' and bool(self.config['from_pretrained'] == "False")):
             qc_train = QCDataset(xy_train)
-            loader_train = DataLoader(qc_train,batch_size=int(self.config["batch_size"]),collate_fn=self.qc_collate_fn_bilstm)
+            loader_train = DataLoader(qc_train,batch_size=int(self.config["batch_size"]),collate_fn=qc_collate_fn_bilstm)
             qc_dev = QCDataset(xy_dev)
-            loader_dev = DataLoader(qc_dev,batch_size=int(self.config["batch_size"]),collate_fn=self.qc_collate_fn_bilstm)
+            loader_dev = DataLoader(qc_dev,batch_size=int(self.config["batch_size"]),collate_fn=qc_collate_fn_bilstm)
 
             model = BOW_FFNN_RANDOM(len(vocabulary)+1,int(self.config['word_embedding_dim']),\
                 int(self.config['bilstm_hidden_size']),int(self.config['hidden_size']),len(labels_index),bool(self.config['freeze']=="True"))
-
-
-
 
 
         criterion = torch.nn.CrossEntropyLoss()
@@ -111,15 +101,15 @@ class Train:
                     optimizer.zero_grad()
                     y_pred = model(data,length)
                     loss = criterion(y_pred,torch.tensor(label)) 
-                    print('Epoch {}, batch {}, best accuracy: {}'.format(epoch+1, batch, best_accuracy))
                     batch += 1
                     loss.backward()
                     optimizer.step()
-                    acc = self.get_accuracy_bilstm(model, loader_dev)
+                    acc = get_accuracy_bilstm(model, loader_dev)
                     if acc > best_accuracy:
                         best_accuracy = acc
                         early_stopping = 0
                         torch.save(model, self.config["path_model"])
+                        print('Epoch {}, batch {}, best accuracy: {}'.format(epoch+1, batch, best_accuracy))
                     else :
                         early_stopping += 1
                     if early_stopping >= int(self.config["early_stopping"]):
@@ -127,7 +117,7 @@ class Train:
                         break
 
             model = torch.load(self.config["path_model"])
-            acc = self.get_accuracy_bilstm(model, loader_dev)
+            acc = get_accuracy_bilstm(model, loader_dev)
             print( "The accuray after training is : " , acc )
 
         if(self.config['model']=='bow'):
@@ -137,15 +127,15 @@ class Train:
                     optimizer.zero_grad()
                     y_pred = model(data)
                     loss = criterion(y_pred,torch.tensor(label)) 
-                    print('Epoch {}, batch {}, best accuracy: {}'.format(epoch+1, batch, best_accuracy))
                     batch += 1
                     loss.backward()
                     optimizer.step()
-                    acc = self.get_accuracy_bow(model, loader_dev)
+                    acc = get_accuracy_bow(model, loader_dev)
                     if acc > best_accuracy:
                         best_accuracy = acc
                         early_stopping = 0
                         torch.save(model, self.config["path_model"])
+                        print('Epoch {}, batch {}, best accuracy: {}'.format(epoch+1, batch, best_accuracy))
                     else :
                         early_stopping += 1
                     if early_stopping >= int(self.config["early_stopping"]):
@@ -153,47 +143,11 @@ class Train:
                         break
 
             model = torch.load(self.config["path_model"])
-            acc = self.get_accuracy_bow(model, loader_dev)
+            acc = get_accuracy_bow(model, loader_dev)
             print( "The accuray after training is : " , acc )
 
 
 
-    def qc_collate_fn_bow(self,QCDataset):
-        data,label = [],[]
-        for dataset in QCDataset:
-            data.append(dataset[0])
-            label.append(dataset[1])
-        return data,label
 
-    def qc_collate_fn_bilstm(self,QCDataset):
-        length,data,label = [],[],[]
-        for dataset in QCDataset:
-            data.append(dataset[0])
-            label.append(dataset[1])
-            length.append(len(dataset[0]))
-        data = torch.nn.utils.rnn.pad_sequence(data,padding_value=0)
-        return data,label,length
 
-    def get_accuracy_bow(self,model,loader):
-        count = 0
-        length =0
-        with torch.no_grad():
-            for x, y in loader:
-                y_preds = model(x).argmax(dim=1)
-                count += np.sum(y_preds.numpy() == y) 
-                length += len(y)
-            # compute the accuracy
-        acc = count/length
-        return acc
-    
-    def get_accuracy_bilstm(self,model,loader):
-        count = 0
-        length =0
-        with torch.no_grad():
-            for x, y, lengths in loader:
-                y_preds = model(x,lengths).argmax(dim=1)
-                count += np.sum(y_preds.numpy() == y) 
-                length += len(y)
-            # compute the accuracy
-        acc = count/length
-        return acc
+

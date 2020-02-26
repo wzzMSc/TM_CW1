@@ -32,22 +32,5 @@ class BiLSTM_FFNN_PRE(nn.Module):
             else:
                 vec = torch.cat((vec,output.index_select(1,torch.tensor(i)).squeeze(1).index_select(0,torch.tensor(lengths[i]-1)).mean(dim=0).unsqueeze(0)),0)
 
-        # vec = output.mean(dim=0)
-        # head,tail=0,lengths[0]
-        # vec = 0
-        # for i in range(len(lengths)):
-        #     if i==0:
-        #         vec = packed_output.data.index_select(0,torch.tensor(range(head,tail))).mean(dim=0).view(1,self.bilstm_hidden_size*2)
-        #         head=tail
-        #         tail+=lengths[i+1]
-        #     elif i!=len(lengths)-1:
-        #         vec = torch.cat((vec,packed_output.data.index_select(0,torch.tensor(range(head,tail))).mean(dim=0).view(1,self.bilstm_hidden_size*2)),0)
-        #         head=tail
-        #         tail+=lengths[i+1]
-        #     else:
-        #         vec = torch.cat((vec,packed_output.data.index_select(0,torch.tensor(range(head,tail))).mean(dim=0).view(1,self.bilstm_hidden_size*2)),0)
-        # vec = vec.view(data.size()[1],self.bilstm_hidden_size*2)
-        # vec = vec.view(self.bilstm_hidden_size*2,data.size()[1])
-        # vec = vec.transpose(0,1)
         ffnn = self.ffnn(vec)
         return self.log_softmax(ffnn)
