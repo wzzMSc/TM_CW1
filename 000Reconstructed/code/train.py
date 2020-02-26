@@ -17,14 +17,11 @@ class Train:
 
         
         prpr = Preprocess(self.config)
-        # prpr.preprocess()
+        prpr.preprocess(self.config['path_data'],"train")
         labels,sentences,vocabulary,voca_embs,sens_rep,labels_index,labels_rep = prpr.load_preprocessed()
-        # for element in prpr.load_preprocessed():
-        #     for i in range(5):
-        #         print(element[i])
+
 
         train_size = int(0.9*len(sens_rep))
-        # dev_size = int(0.1*len(sens_rep))
         dev_size = len(sens_rep)-train_size
 
         merged_rep = list()
@@ -41,15 +38,10 @@ class Train:
             y_train.append(train_set[i][1])
         for i in range(dev_size):
             x_dev.append(dev_set[i][0])
-            y_dev.append(dev_set[i][1])
-
-        
+            y_dev.append(dev_set[i][1])   
 
         xy_train = (x_train,y_train)
         xy_dev = (x_dev,y_dev)
-        
-
-
         
 
         if(self.config["model"] == 'bow' and bool(self.config['from_pretrained'] == "True")):
@@ -145,9 +137,3 @@ class Train:
             model = torch.load(self.config["path_model"])
             acc = get_accuracy_bow(model, loader_dev)
             print( "The accuray after training is : " , acc )
-
-
-
-
-
-

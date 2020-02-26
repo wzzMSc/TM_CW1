@@ -18,4 +18,4 @@ with open('config.ini','r') as f:
 if args.phase == 'train':
     Train(config_dict).train()
 if args.phase == 'test':
-    Test(config_dict)
+    Test(config_dict).test()
