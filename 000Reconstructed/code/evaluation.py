@@ -37,3 +37,17 @@ def get_confusion_matrix(y_real,y_preds,size):
         else:
             mat[y_real[i]-1][y_preds[i]-1] += 1
     return pd.DataFrame(mat)
+
+def get_micro_f1(conf_mat):
+    mat = np.array(conf_mat)
+    tp,fp,fn = list(),list(),list()
+    for i in range(np.size(mat,0)):
+        tp.append(mat[i][i])
+        fp.append(np.sum(mat[:][i]) - mat[i][i] )
+        fn.append(np.sum(mat[i][:]) - mat[i][i] )
+    tp_sum = np.sum(np.array(tp))
+    fp_sum = np.sum(np.array(fp))
+    fn_sum = np.sum(np.array(fn))
+    precision = tp_sum/(tp_sum+fp_sum)
+    recall = tp_sum/(tp_sum+fn_sum)
+    return 2*precision*recall/(precision+recall)
