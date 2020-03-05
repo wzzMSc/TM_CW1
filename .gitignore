@@ -1,7 +1,0 @@
-.gitignore
-
-__pycache__/
-Pretrained/
-000Reconstructed/data/*.bin
-000Reconstructed/data/*.bow
-000Reconstructed/data/*.bilstm
