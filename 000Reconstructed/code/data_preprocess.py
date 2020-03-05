@@ -84,7 +84,7 @@ class Preprocess:
                     sen_rep.append(vocabulary.index(word))
                 else:
                     sen_rep.append(len(voca_embs)-1)
-            sens_rep.append(torch.tensor(sen_rep)) #CUDA
+            sens_rep.append(torch.tensor(sen_rep))
 
 
         if phase=="train":

@@ -6,7 +6,7 @@ from bow_ffnn_random import BOW_FFNN_RANDOM
 from bilstm_ffnn_pretrained import BiLSTM_FFNN_PRE
 from qc_dataset import QCDataset
 from collate import qc_collate_fn_bilstm,qc_collate_fn_bow
-from evaluation import get_accuracy_bow,get_accuracy_bilstm
+from evaluation import get_accuracy_bow,get_accuracy_bilstm,get_confusion_matrix
 from torch.utils.data.dataloader import DataLoader
 
 class Train:
@@ -58,7 +58,7 @@ class Train:
             loader_train = DataLoader(qc_train,batch_size=int(self.config["batch_size"]),collate_fn=qc_collate_fn_bow)
             qc_dev = QCDataset(xy_dev)
             loader_dev = DataLoader(qc_dev,batch_size=int(self.config["batch_size"]),collate_fn=qc_collate_fn_bow)
-            # I don't know why, but +1 works
+            
             model = BOW_FFNN_RANDOM(len(vocabulary)+1,int(self.config['word_embedding_dim']),\
                 int(self.config['hidden_size']),len(labels_index),bool(self.config['freeze']=="True"))
 
@@ -77,7 +77,7 @@ class Train:
             qc_dev = QCDataset(xy_dev)
             loader_dev = DataLoader(qc_dev,batch_size=int(self.config["batch_size"]),collate_fn=qc_collate_fn_bilstm)
 
-            model = BOW_FFNN_RANDOM(len(vocabulary)+1,int(self.config['word_embedding_dim']),\
+            model = BiLSTM_FFNN_RANDOM(len(vocabulary)+1,int(self.config['word_embedding_dim']),\
                 int(self.config['bilstm_hidden_size']),int(self.config['hidden_size']),len(labels_index),bool(self.config['freeze']=="True"))
 
 
@@ -96,7 +96,7 @@ class Train:
                     batch += 1
                     loss.backward()
                     optimizer.step()
-                    acc = get_accuracy_bilstm(model, loader_dev)
+                    acc,_,_ = get_accuracy_bilstm(model, loader_dev)
                     if acc > best_accuracy:
                         best_accuracy = acc
                         early_stopping = 0
@@ -109,8 +109,10 @@ class Train:
                         break
 
             model = torch.load(self.config["path_model"])
-            acc = get_accuracy_bilstm(model, loader_dev)
+            acc,y_real,y_pre = get_accuracy_bilstm(model, loader_dev)
+            conf_mat = get_confusion_matrix(y_real,y_pre,len(labels_index))
             print( "The accuray after training is : " , acc )
+            print("Confusion Matrix:\n",conf_mat)
 
         if(self.config['model']=='bow'):
             for epoch in range(int(self.config['epoch'])):
@@ -122,7 +124,7 @@ class Train:
                     batch += 1
                     loss.backward()
                     optimizer.step()
-                    acc = get_accuracy_bow(model, loader_dev)
+                    acc,_,_ = get_accuracy_bow(model, loader_dev)
                     if acc > best_accuracy:
                         best_accuracy = acc
                         early_stopping = 0
@@ -135,5 +137,7 @@ class Train:
                         break
 
             model = torch.load(self.config["path_model"])
-            acc = get_accuracy_bow(model, loader_dev)
+            acc,y_real,y_pre = get_accuracy_bow(model, loader_dev)
+            conf_mat = get_confusion_matrix(y_real,y_pre,len(labels_index))
             print( "The accuray after training is : " , acc )
+            print("Confusion Matrix:\n",conf_mat)
