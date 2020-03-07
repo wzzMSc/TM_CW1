@@ -5,9 +5,10 @@ from bow_ffnn_pretrained import BOW_FFNN_PRE
 from bow_ffnn_random import BOW_FFNN_RANDOM
 from bilstm_ffnn_pretrained import BiLSTM_FFNN_PRE
 from bilstm_ffnn_random import BiLSTM_FFNN_RANDOM
+from bow_bilstm_pretrained import BOW_BILSTM_PRE
 from qc_dataset import QCDataset
 from collate import qc_collate_fn_bilstm,qc_collate_fn_bow
-from evaluation import get_accuracy_bow,get_accuracy_bilstm,get_confusion_matrix,get_micro_f1
+from evaluation import get_accuracy_bow,get_accuracy_bilstm,get_confusion_matrix,get_micro_f1,get_macro_f1
 from torch.utils.data.dataloader import DataLoader
 
 class Train:
@@ -80,6 +81,15 @@ class Train:
 
             model = BiLSTM_FFNN_RANDOM(len(vocabulary)+1,int(self.config['word_embedding_dim']),\
                 int(self.config['bilstm_hidden_size']),int(self.config['hidden_size']),len(labels_index),bool(self.config['freeze']=="True"))
+        
+        if(self.config["model"] == 'bow_bilstm' and bool(self.config['from_pretrained'] == "True")):
+            qc_train = QCDataset(xy_train)
+            loader_train = DataLoader(qc_train,batch_size=int(self.config["batch_size"]),collate_fn=qc_collate_fn_bilstm)
+            qc_dev = QCDataset(xy_dev)
+            loader_dev = DataLoader(qc_dev,batch_size=int(self.config["batch_size"]),collate_fn=qc_collate_fn_bilstm)
+            
+            model = BOW_BILSTM_PRE(torch.FloatTensor(voca_embs),\
+                int(self.config['bilstm_hidden_size']),int(self.config['hidden_size']),len(labels_index),bool(self.config['freeze']=="True"))
 
 
         criterion = torch.nn.CrossEntropyLoss()
@@ -87,7 +97,7 @@ class Train:
 
         model.train()
         early_stopping,best_accuracy = 0,0
-        if(self.config['model']=='bilstm'):
+        if(self.config['model']=='bilstm' or self.config['model']=='bow_bilstm'):
             for epoch in range(int(self.config['epoch'])):
                 batch = 1
                 for data,label,length in loader_train:
@@ -113,9 +123,11 @@ class Train:
             acc,y_real,y_pre = get_accuracy_bilstm(model, loader_dev)
             conf_mat = get_confusion_matrix(y_real,y_pre,len(labels_index))
             micro_f1 = get_micro_f1(conf_mat)
+            macro_f1 = get_macro_f1(conf_mat)
             print( "The accuray after training is : " , acc )
             print("Confusion Matrix:\n",conf_mat)
             print("Micro F1: ",micro_f1)
+            print("Macro F1: ",macro_f1)
 
         if(self.config['model']=='bow'):
             for epoch in range(int(self.config['epoch'])):
@@ -143,6 +155,8 @@ class Train:
             acc,y_real,y_pre = get_accuracy_bow(model, loader_dev)
             conf_mat = get_confusion_matrix(y_real,y_pre,len(labels_index))
             micro_f1 = get_micro_f1(conf_mat)
+            macro_f1 = get_macro_f1(conf_mat)
             print( "The accuray after training is : " , acc )
             print("Confusion Matrix:\n",conf_mat)
             print("Micro F1: ",micro_f1)
+            print("Macro F1: ",macro_f1)
