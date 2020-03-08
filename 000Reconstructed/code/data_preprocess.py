@@ -37,7 +37,10 @@ class Preprocess:
                 if word in stop_words:
                     sentence.remove(word) # remove stop words
             sentences.append(re.sub(r'[{}]+'.format(punctuation), '', ' '.join(sentence))) # remove punctuation
+            # sentences.append(' '.join(sentence))
 
+        # About generating vocabulary
+        # If it is training phase, then generate and save it
         if phase=="train":
             words_count_dict = {}
             
@@ -54,39 +57,48 @@ class Preprocess:
             for word_count in wcd_sorted:
                 if word_count[1]>int(self.config['min_words']):
                     vocabulary.append(word_count[0]) # form vocabulary in the order of word count
-
+        # If it is testing phase, then just load the vocabulary
         if phase=="test":
             vocabulary = self.load("../data/vocabulary.bin")
 
+        # About extracting the embeddings corresponding to the vocabulary from pretrained embeddings
+        # If it is the training phase, do the extraction
         if phase=="train":
+            # Get all of the embeddings
             emb = dict()
             with open(self.config['path_pre_emb'],'r') as f:
                 for line in f.readlines():
                     line_list = line.split()
                     emb[line_list[0]] = np.array([float(val) for val in line_list[1:]])
             voca_embs = list()
+            # Extract embeddings
             for word in vocabulary:
                 try:
+                    # If the embedding of the word exists in pretrained set, then get it
                     voca_embs.append(emb[word])
                 except KeyError:
-                    voca_embs.append(emb['#UNK#'])        
+                    # If not, place the average of the pretrained embedding for words that are in the vocabulary but not found in pretrained set
+                    voca_embs.append(emb['#UNK#'])
+            # Place the average of the pretrained embedding for words that are in the sentence but not included in vocabulary
             voca_embs.append(emb['#UNK#'])
-
+        # If it is the testing phase, load the extracted embeddings
         if phase=="test":
             voca_embs = self.load("../data/voca_embs.bin")
 
+        # Generate sentence representations using vocabulary
         sens_rep = list()
-
         for sentence in sentences:
             sen_rep = list()
             for word in sentence.split():
                 if word in vocabulary:
                     sen_rep.append(vocabulary.index(word))
                 else:
+                    # words that are in the sentence but not included in vocabulary
                     sen_rep.append(len(voca_embs)-1)
             sens_rep.append(torch.tensor(sen_rep))
 
-
+        # About convert label to numeric representation
+        # If it is the training phase, then generate the label to index conversion dictionary
         if phase=="train":
             labels_index = dict()
             count=0
@@ -94,16 +106,16 @@ class Preprocess:
                 if label not in labels_index:
                     labels_index[label] = count
                     count += 1
-
+        # If it is the testing phase, load it other than generate another to keep the labels consistent
         if phase=="test":
             labels_index = self.load("../data/labels_index.bin")
-        
+        # Generate labels' representation according to labels' index
         labels_rep = list()
         for label in labels:
             labels_rep.append(labels_index[label])
 
 
-
+        # Save for further use
         self.save(labels,'../data/labels.bin')
         self.save(sentences,'../data/sentences.bin')
         self.save(vocabulary,'../data/vocabulary.bin')

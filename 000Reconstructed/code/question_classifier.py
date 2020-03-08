@@ -7,7 +7,7 @@ parser.add_argument('phase', type=str, help="Phase of question classification.(t
 parser.add_argument('-config',type=str,help="configuration_file_path")
 args = parser.parse_args()
 
-with open('config.ini','r') as f:
+with open(args.config,'r') as f:
     config_dict = dict()
     for line in f.readlines():
         line.replace(" ","")

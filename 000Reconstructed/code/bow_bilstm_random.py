@@ -2,23 +2,20 @@ from torch import nn
 import torch
 from ffnn import FFNN
 
-class BOW_BiLSTM_PRE(nn.Module):
+class BOW_BiLSTM_RANDOM(nn.Module):
 
-    def __init__(self, embeddings, bilstm_hidden_size, ffnn_hidden_size, ffnn_output_size, freeze = True):
-        super(BOW_BiLSTM_PRE, self).__init__()
+    def __init__(self, voca_size, input_size, bilstm_hidden_size, ffnn_hidden_size, ffnn_output_size, freeze = True):
+        super(BOW_BiLSTM_RANDOM, self).__init__()
         # Get the dimension of embeddings as the input size of bilstm
-        _, self.input_size = embeddings.size()
+        self.voca_size = voca_size
+        self.input_size = input_size
         self.bilstm_hidden_size = bilstm_hidden_size
         self.ffnn_hidden_size = ffnn_hidden_size
         self.ffnn_output_size = ffnn_output_size
         self.freeze = freeze
-        # Use pretrained embeddings, bag of words layer
-        self.bow = nn.EmbeddingBag.\
-                from_pretrained(
-                    embeddings,
-                    freeze=self.freeze,
-                    mode='mean'
-                )
+        # BOW layer
+        self.bow = nn.EmbeddingBag(voca_size,input_size,mode='mean')
+        self.bow.weight.requires_grad = not self.freeze
         # Bilstm network
         self.bilstm = nn.LSTM(self.input_size,self.bilstm_hidden_size, bidirectional=True)
         # Feed forward neurual network with one hidden layer 
