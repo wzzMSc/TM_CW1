@@ -138,6 +138,26 @@ class Train:
             print("Confusion Matrix:\n",conf_mat)
             print("Micro F1: ",micro_f1)
             print("Macro F1: ",macro_f1)
+            output = open(self.config["path_eval_result"],'w')
+            print("{0:<15}\t{1:<15}\t{2}".format("Actual","Prediction","Correct?"),file = output)
+            for i,j in zip(y_real,y_pre):
+                real = list(labels_index.keys())[list(labels_index.values()).index(i)]
+                pre = list(labels_index.keys())[list(labels_index.values()).index(j)]
+                if i==j:
+                    print("{0:<15}\t{1:<15}\t{2}".format(real,pre,"True"),file = output)
+                else:
+                    print("{0:<15}\t{1:<15}\t{2}".format(real,pre,"False"),file = output)
+            print(
+                "The accuray after training is: ",acc,
+                '\n',
+                "Confusion Matrix:\n",conf_mat,
+                '\n',
+                "Micro F1: ",micro_f1,
+                '\n',
+                "Macro F1: ",macro_f1,
+                file = output
+            )
+            output.close()
 
         if(self.config['model']=='bow'):
             for epoch in range(int(self.config['epoch'])):
@@ -170,3 +190,23 @@ class Train:
             print("Confusion Matrix:\n",conf_mat)
             print("Micro F1: ",micro_f1)
             print("Macro F1: ",macro_f1)
+            output = open(self.config["path_eval_result"],'w')
+            print("{0:<15}\t{1:<15}\t{2}".format("Actual","Prediction","Correct?"),file = output)
+            for i,j in zip(y_real,y_pre):
+                real = list(labels_index.keys())[list(labels_index.values()).index(i)]
+                pre = list(labels_index.keys())[list(labels_index.values()).index(j)]
+                if i==j:
+                    print("{0:<15}\t{1:<15}\t{2}".format(real,pre,"True"),file = output)
+                else:
+                    print("{0:<15}\t{1:<15}\t{2}".format(real,pre,"False"),file = output)
+            print(
+                "The accuray after training is: ",acc,
+                '\n',
+                "Confusion Matrix:\n",conf_mat,
+                '\n',
+                "Micro F1: ",micro_f1,
+                '\n',
+                "Macro F1: ",macro_f1,
+                file = output
+            )
+            output.close()

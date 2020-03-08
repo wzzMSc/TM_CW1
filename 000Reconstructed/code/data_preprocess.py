@@ -1,5 +1,3 @@
-from stop_words import get_stop_words
-import pandas as pd
 import re
 import numpy as np
 import pickle

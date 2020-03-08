@@ -24,13 +24,22 @@ def get_accuracy_test(model,model_type,x,y,lengths):
     with torch.no_grad():
         if model_type=='bow':
             y_preds = model(x).argmax(dim=1)
-            return np.sum(y_preds.numpy()==y)/len(y)
+            return np.sum(y_preds.numpy()==y)/len(y),y_preds
         if model_type=='bilstm':
             y_preds = model(x,lengths).argmax(dim=1)
-            return np.sum(y_preds.numpy()==y)/len(y)
+            return np.sum(y_preds.numpy()==y)/len(y),y_preds
+        if model_type=='bow_bilstm':
+            y_preds = model(x,lengths).argmax(dim=1)
+            return np.sum(y_preds.numpy()==y)/len(y),y_preds
 
 def get_confusion_matrix(y_real,y_preds,size):
-    mat = np.zeros( (size,size) )
+    # Pandas settings
+    pd.set_option('display.max_columns', None)
+    pd.set_option('display.max_rows', None)
+    pd.set_option('display.width', 100)
+    pd.set_option('expand_frame_repr', False)
+    pd.set_option('max_colwidth',100)
+    mat = np.zeros( (size,size) , dtype=np.dtype(np.int8))
     for i in range(len(y_real)):
         if y_real[i]==y_preds[i]:
             mat[y_real[i]-1][y_real[i]-1] += 1
