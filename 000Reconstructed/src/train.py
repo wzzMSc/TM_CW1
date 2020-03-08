@@ -20,7 +20,7 @@ class Train:
 
         # Preprocess the data
         prpr = Preprocess(self.config)
-        # Comment this line below to skip the data preprocessing if you have preprocessed the data before
+        # Comment this line below to skip the data preprocessing if you have preprocessed the data before (save time)
         prpr.preprocess(self.config['path_data'],"train")
         # Get all essential data preprocessing results
         labels,sentences,vocabulary,voca_embs,sens_rep,labels_index,labels_rep = prpr.load_preprocessed()

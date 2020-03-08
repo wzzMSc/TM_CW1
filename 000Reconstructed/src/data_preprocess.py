@@ -1,6 +1,5 @@
 import re
 import numpy as np
-import pickle
 import torch
 
 
@@ -128,7 +127,7 @@ class Preprocess:
         return self.load('../data/labels.bin'),self.load('../data/sentences.bin'),self.load('../data/vocabulary.bin'),self.load('../data/voca_embs.bin'),self.load('../data/sens_rep.bin'),self.load('../data/labels_index.bin'),self.load('../data/labels_rep.bin')
 
     def save(self,l,f_name):
-        pickle.dump(l,open(f_name,'wb'))
+        torch.save(l,f_name)
 
     def load(self,f_name):
-        return pickle.load(open(f_name,'rb'))
+        return torch.load(f_name)
