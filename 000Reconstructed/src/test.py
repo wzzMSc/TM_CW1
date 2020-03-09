@@ -1,6 +1,6 @@
 from data_preprocess import Preprocess
 import torch
-from evaluation import get_accuracy_test,get_confusion_matrix,get_micro_f1,get_macro_f1
+from evaluation import get_accuracy_test,get_confusion_matrix,get_micro_f1,get_macro_f1,get_accuracy_ens_bow
 
 class Test:
     def __init__(self,config):
@@ -10,11 +10,37 @@ class Test:
         prpr = Preprocess(self.config)
         prpr.preprocess(self.config['path_test'],"test")
         labels,sentences,vocabulary,voca_embs,sens_rep,labels_index,labels_rep = prpr.load_preprocessed()
-        model = torch.load(self.config["path_model"])
+        
         y_real = labels_rep
         lengths = list()
         for sen in sens_rep:
             lengths.append(len(sen))
+
+        if(self.config["model"] == 'bow_ens'):
+            models = list()
+            for ens in range(int(self.config["ensemble_size"])):
+                models.append(torch.load(self.config["path_model"]+'.'+str(ens)))
+            x = sens_rep
+            accs,y_pre = get_accuracy_ens_bow(models,x,y_real)
+            conf_mat = get_confusion_matrix(y_real,y_pre,len(labels_index))
+            micro_f1 = get_micro_f1(conf_mat)
+            macro_f1 = get_macro_f1(conf_mat)
+            output = open(self.config["path_eval_result"],'w')
+            print("The accuracy of {} models are: ".format(len(models)),file=output)
+            for i in range(len(accs)-1):
+                print(str(accs[i])+" ",file=output)
+            print("\nThe ensembled accuracy is: {}\n".format(accs[len(accs)-1]),file=output)
+            print(
+                "Confusion Matrix:\n",conf_mat,
+                "\nMicro F1: ",micro_f1,
+                "\nMacro F1: ",macro_f1,
+                file = output
+            )
+            output.close()
+            return
+
+        model = torch.load(self.config["path_model"])
+
         if(self.config["model"] == 'bow'):
             x = sens_rep
             acc,y_pre = get_accuracy_test(model,"bow",x,y_real,False)

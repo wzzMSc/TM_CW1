@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "args": ["train","-config","bow_ffnn_ens.config"]
+            "args": ["test","-config","bow_ffnn_ens.config"]
         }
     ]
 }
