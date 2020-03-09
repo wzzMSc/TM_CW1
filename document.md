@@ -1,6 +1,6 @@
 # Structure
 
-![QC](C:\Users\HASEE\Desktop\TM\CW1\QC.png)
+![QC](https://raw.githubusercontent.com/wzzMSc/TM_CW1/master/QC.png)
 
 # Main interface
 
