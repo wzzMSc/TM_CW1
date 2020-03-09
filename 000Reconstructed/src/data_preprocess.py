@@ -106,7 +106,7 @@ class Preprocess:
         # If it is the testing phase, load it other than generate another to keep the labels consistent
         if phase=="test":
             labels_index = self.load("../data/labels_index.bin")
-        # Generate labels' representation according to labels' index
+        # Generate labels' representations according to labels' index
         labels_rep = list()
         for label in labels:
             labels_rep.append(labels_index[label])

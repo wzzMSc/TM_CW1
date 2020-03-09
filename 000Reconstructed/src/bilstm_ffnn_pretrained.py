@@ -17,14 +17,14 @@ class BiLSTM_FFNN_PRE(nn.Module):
         
         # Bilstm network
         self.bilstm = nn.LSTM(self.input_size,self.bilstm_hidden_size, bidirectional=True)
-        # Feed forward neurual network with one hidden layer 
+        # Feed forward neural network with one hidden layer 
         self.ffnn = FFNN(self.bilstm_hidden_size*2,self.ffnn_hidden_size, self.ffnn_output_size)
         # Softmax layer
         self.log_softmax = nn.LogSoftmax(dim=1)
 
-    def forward(self, data, lengths):
+    def forward(self, input, lengths):
         # Get the embeddings of the padded data
-        sequence_embed = self.embeddingLayer(data)
+        sequence_embed = self.embeddingLayer(input)
         # Pack the embeddings of padded data
         pack = torch.nn.utils.rnn.pack_padded_sequence(
             sequence_embed,
