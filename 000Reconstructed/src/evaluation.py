@@ -108,14 +108,22 @@ def get_micro_f1(conf_mat):
 def get_macro_f1(conf_mat):
     mat = np.array(conf_mat)
     precision,recall = list(),list()
+    f1 = list()
     for i in range(np.size(mat,0)):
         tp=mat[i][i]
         fp=np.sum(mat[:][i]) - mat[i][i]
         fn=np.sum(mat[i][:]) - mat[i][i]
+        p,r=0,0
         if tp!=0 or fp!=0:
+            p=tp/(tp+fp)
             precision.append(tp/(tp+fp))
         if tp!=0 or fn!=0:
+            r=tp/(tp+fn)
             recall.append(tp/(tp+fn))
+        if p!=0 or r!=0:
+            f1.append(2*p*r/(p+r))
+        else:
+            f1.append(0)
     pre_avg = np.mean(np.array(precision))
     rec_avg = np.mean(np.array(recall))
-    return 2*pre_avg*rec_avg/(pre_avg+rec_avg)
+    return 2*pre_avg*rec_avg/(pre_avg+rec_avg),f1
