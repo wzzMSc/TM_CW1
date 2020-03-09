@@ -54,6 +54,27 @@ def get_accuracy_ens_bow(models,x,y):
     accs.append( np.sum(np.array(y_preds_ens)==y)/len(y) )
     return accs,y_preds_ens
 
+def get_accuracy_ens_bilstm(models,x,y,lengths):
+    accs = list()
+    y_preds_sum = list()
+    for i in range(len(y)):
+        y_preds_sum.append(dict())
+    with torch.no_grad():
+        for model_index in range(len(models)):
+            y_preds = models[model_index](x,lengths).argmax(dim=1)
+            accs.append(np.sum(y_preds.numpy()==y)/len(y))
+            for i in range( len(y_preds.numpy().tolist()) ):
+                if y_preds.numpy().tolist()[i] in y_preds_sum[i]:
+                    y_preds_sum[i][y_preds.numpy().tolist()[i]] += 1
+                else:
+                    y_preds_sum[i][y_preds.numpy().tolist()[i]] = 1
+    y_preds_ens = list()
+    for i in range(len(y_preds_sum)):
+        sort_list = list(y_preds_sum[i].items())
+        sort_list.sort(key=lambda x:x[1],reverse=True)
+        y_preds_ens.append(sort_list[0][0])
+    accs.append( np.sum(np.array(y_preds_ens)==y)/len(y) )
+    return accs,y_preds_ens
 
 def get_confusion_matrix(y_real,y_preds,size):
     # Pandas settings

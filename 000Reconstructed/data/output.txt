@@ -1,68 +1,561 @@
-The accuracy of 10 models are: 
-0.67 
-0.632 
-0.65 
-0.64 
-0.634 
-0.65 
-0.66 
-0.634 
-0.628 
-0.646 
+Actual         	Prediction     	Correct?
+NUM:dist       	DESC:def       	False
+LOC:city       	LOC:other      	False
+HUM:desc       	HUM:ind        	False
+DESC:def       	DESC:def       	True
+NUM:date       	HUM:ind        	False
+NUM:dist       	NUM:count      	False
+HUM:gr         	HUM:ind        	False
+ENTY:plant     	LOC:other      	False
+DESC:reason    	NUM:count      	False
+DESC:def       	DESC:def       	True
+LOC:city       	LOC:other      	False
+HUM:ind        	HUM:ind        	True
+NUM:weight     	DESC:def       	False
+HUM:ind        	HUM:ind        	True
+NUM:date       	HUM:ind        	False
+NUM:other      	DESC:def       	False
+ENTY:substance 	DESC:def       	False
+HUM:ind        	HUM:ind        	True
+DESC:def       	DESC:def       	True
+NUM:date       	DESC:def       	False
+HUM:ind        	HUM:ind        	True
+DESC:def       	DESC:def       	True
+LOC:other      	LOC:other      	True
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+HUM:ind        	HUM:ind        	True
+DESC:def       	DESC:def       	True
+LOC:other      	LOC:other      	True
+LOC:other      	LOC:other      	True
+LOC:other      	DESC:def       	False
+NUM:speed      	DESC:def       	False
+LOC:mount      	LOC:other      	False
+DESC:def       	DESC:def       	True
+NUM:temp       	DESC:def       	False
+NUM:date       	HUM:ind        	False
+NUM:period     	HUM:ind        	False
+LOC:other      	LOC:other      	True
+NUM:dist       	NUM:count      	False
+NUM:count      	NUM:count      	True
+NUM:count      	NUM:count      	True
+ENTY:plant     	LOC:other      	False
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+ENTY:animal    	HUM:ind        	False
+ENTY:animal    	HUM:ind        	False
+NUM:period     	LOC:other      	False
+DESC:def       	DESC:def       	True
+NUM:count      	NUM:count      	True
+HUM:gr         	HUM:ind        	False
+DESC:def       	DESC:def       	True
+HUM:ind        	HUM:ind        	True
+HUM:ind        	HUM:ind        	True
+DESC:def       	DESC:def       	True
+DESC:desc      	DESC:def       	False
+DESC:def       	DESC:def       	True
+NUM:date       	HUM:ind        	False
+LOC:city       	DESC:def       	False
+LOC:city       	LOC:other      	False
+NUM:speed      	DESC:def       	False
+LOC:city       	LOC:other      	False
+HUM:ind        	DESC:def       	False
+LOC:other      	LOC:other      	True
+ENTY:food      	DESC:def       	False
+LOC:state      	LOC:other      	False
+HUM:desc       	HUM:ind        	False
+ENTY:termeq    	DESC:def       	False
+DESC:def       	DESC:def       	True
+NUM:date       	LOC:other      	False
+LOC:other      	LOC:other      	True
+NUM:other      	DESC:def       	False
+NUM:money      	NUM:count      	False
+LOC:city       	LOC:other      	False
+HUM:ind        	HUM:ind        	True
+LOC:other      	LOC:other      	True
+DESC:def       	DESC:def       	True
+ENTY:currency  	DESC:def       	False
+NUM:dist       	LOC:other      	False
+NUM:weight     	NUM:count      	False
+HUM:ind        	HUM:ind        	True
+DESC:def       	DESC:def       	True
+NUM:date       	HUM:ind        	False
+HUM:ind        	HUM:ind        	True
+NUM:other      	DESC:def       	False
+NUM:date       	HUM:ind        	False
+DESC:reason    	DESC:def       	False
+DESC:def       	DESC:def       	True
+HUM:ind        	HUM:ind        	True
+DESC:def       	DESC:def       	True
+LOC:country    	LOC:other      	False
+ENTY:event     	LOC:other      	False
+DESC:def       	DESC:def       	True
+NUM:temp       	DESC:def       	False
+NUM:date       	LOC:other      	False
+HUM:gr         	LOC:other      	False
+LOC:other      	LOC:other      	True
+NUM:date       	LOC:other      	False
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+ENTY:other     	LOC:other      	False
+DESC:def       	DESC:def       	True
+HUM:ind        	HUM:ind        	True
+DESC:manner    	DESC:manner    	True
+HUM:desc       	HUM:ind        	False
+LOC:city       	LOC:other      	False
+DESC:def       	DESC:def       	True
+NUM:temp       	DESC:def       	False
+ENTY:animal    	DESC:def       	False
+NUM:date       	HUM:ind        	False
+LOC:other      	NUM:count      	False
+ENTY:color     	DESC:def       	False
+DESC:def       	DESC:def       	True
+NUM:dist       	LOC:other      	False
+HUM:ind        	HUM:ind        	True
+ENTY:plant     	LOC:other      	False
+HUM:ind        	HUM:ind        	True
+NUM:date       	HUM:ind        	False
+ENTY:substance 	DESC:def       	False
+NUM:date       	HUM:ind        	False
+LOC:other      	LOC:other      	True
+NUM:date       	DESC:def       	False
+NUM:dist       	NUM:count      	False
+DESC:def       	DESC:def       	True
+HUM:ind        	HUM:ind        	True
+NUM:dist       	DESC:def       	False
+HUM:ind        	HUM:ind        	True
+NUM:dist       	NUM:count      	False
+NUM:date       	LOC:other      	False
+DESC:def       	DESC:def       	True
+NUM:period     	DESC:def       	False
+NUM:dist       	NUM:count      	False
+HUM:ind        	HUM:ind        	True
+DESC:def       	DESC:def       	True
+ENTY:product   	LOC:other      	False
+DESC:def       	DESC:def       	True
+ENTY:other     	LOC:other      	False
+LOC:other      	LOC:other      	True
+HUM:ind        	HUM:ind        	True
+HUM:title      	LOC:other      	False
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+ENTY:animal    	HUM:ind        	False
+LOC:other      	LOC:other      	True
+ENTY:animal    	LOC:other      	False
+DESC:def       	DESC:def       	True
+ENTY:body      	DESC:def       	False
+HUM:ind        	HUM:ind        	True
+ENTY:veh       	LOC:other      	False
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+ENTY:termeq    	DESC:def       	False
+HUM:ind        	HUM:ind        	True
+DESC:def       	DESC:def       	True
+NUM:date       	HUM:ind        	False
+HUM:gr         	NUM:count      	False
+LOC:other      	DESC:def       	False
+LOC:city       	DESC:def       	False
+DESC:def       	DESC:def       	True
+LOC:other      	HUM:ind        	False
+LOC:state      	LOC:other      	False
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+NUM:date       	HUM:ind        	False
+LOC:other      	LOC:other      	True
+ENTY:termeq    	DESC:def       	False
+LOC:other      	LOC:other      	True
+NUM:date       	HUM:ind        	False
+DESC:def       	DESC:def       	True
+LOC:state      	NUM:count      	False
+HUM:ind        	HUM:ind        	True
+NUM:date       	LOC:other      	False
+NUM:speed      	DESC:manner    	False
+NUM:date       	HUM:ind        	False
+DESC:def       	DESC:def       	True
+LOC:other      	LOC:other      	True
+LOC:state      	LOC:other      	False
+LOC:other      	LOC:other      	True
+NUM:date       	HUM:ind        	False
+ENTY:color     	NUM:count      	False
+NUM:dist       	NUM:count      	False
+LOC:other      	LOC:other      	True
+DESC:def       	DESC:def       	True
+LOC:other      	LOC:other      	True
+DESC:def       	DESC:def       	True
+ENTY:substance 	DESC:def       	False
+HUM:ind        	HUM:ind        	True
+HUM:ind        	LOC:other      	False
+DESC:def       	DESC:def       	True
+LOC:other      	LOC:other      	True
+ENTY:substance 	DESC:def       	False
+ENTY:other     	DESC:def       	False
+NUM:dist       	NUM:count      	False
+NUM:period     	NUM:count      	False
+NUM:date       	HUM:ind        	False
+DESC:def       	DESC:def       	True
+LOC:city       	LOC:other      	False
+ENTY:currency  	DESC:def       	False
+HUM:ind        	HUM:ind        	True
+ENTY:product   	HUM:ind        	False
+ENTY:substance 	DESC:def       	False
+ENTY:product   	HUM:ind        	False
+LOC:city       	HUM:ind        	False
+HUM:ind        	HUM:ind        	True
+ENTY:animal    	LOC:other      	False
+NUM:other      	DESC:def       	False
+LOC:other      	LOC:other      	True
+HUM:ind        	HUM:ind        	True
+NUM:temp       	DESC:def       	False
+DESC:desc      	DESC:def       	False
+DESC:desc      	DESC:def       	False
+NUM:date       	LOC:other      	False
+NUM:speed      	DESC:manner    	False
+LOC:state      	LOC:other      	False
+LOC:other      	LOC:other      	True
+DESC:def       	DESC:def       	True
+ENTY:lang      	DESC:def       	False
+DESC:def       	DESC:def       	True
+ENTY:termeq    	LOC:other      	False
+NUM:count      	NUM:count      	True
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+NUM:date       	LOC:other      	False
+DESC:def       	DESC:def       	True
+ENTY:other     	DESC:def       	False
+LOC:mount      	LOC:other      	False
+ENTY:substance 	NUM:count      	False
+NUM:other      	DESC:def       	False
+DESC:desc      	DESC:def       	False
+LOC:other      	LOC:other      	True
+HUM:ind        	HUM:ind        	True
+NUM:date       	NUM:count      	False
+HUM:ind        	HUM:ind        	True
+DESC:def       	DESC:def       	True
+NUM:count      	NUM:count      	True
+ENTY:other     	LOC:other      	False
+DESC:def       	DESC:def       	True
+LOC:other      	LOC:other      	True
+DESC:def       	DESC:def       	True
+LOC:other      	LOC:other      	True
+NUM:speed      	DESC:manner    	False
+LOC:state      	LOC:other      	False
+DESC:def       	LOC:other      	False
+DESC:reason    	DESC:def       	False
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+LOC:other      	NUM:count      	False
+DESC:def       	DESC:def       	True
+DESC:def       	NUM:count      	False
+DESC:desc      	DESC:def       	False
+ENTY:other     	DESC:def       	False
+HUM:ind        	HUM:ind        	True
+LOC:city       	NUM:count      	False
+ENTY:other     	DESC:def       	False
+ENTY:substance 	HUM:ind        	False
+DESC:def       	DESC:def       	True
+LOC:other      	LOC:other      	True
+NUM:dist       	LOC:other      	False
+ENTY:termeq    	LOC:other      	False
+DESC:def       	DESC:def       	True
+NUM:money      	DESC:def       	False
+HUM:ind        	HUM:ind        	True
+HUM:ind        	HUM:ind        	True
+NUM:count      	NUM:count      	True
+ENTY:instru    	DESC:def       	False
+NUM:period     	HUM:ind        	False
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+LOC:city       	DESC:def       	False
+NUM:period     	NUM:count      	False
+DESC:manner    	LOC:other      	False
+ENTY:lang      	DESC:def       	False
+DESC:desc      	LOC:other      	False
+DESC:def       	DESC:def       	True
+HUM:ind        	HUM:ind        	True
+DESC:def       	DESC:def       	True
+DESC:reason    	DESC:def       	False
+DESC:def       	DESC:def       	True
+NUM:date       	LOC:other      	False
+ABBR:abb       	DESC:def       	False
+ENTY:substance 	DESC:def       	False
+LOC:other      	LOC:other      	True
+HUM:ind        	HUM:ind        	True
+ABBR:exp       	DESC:def       	False
+DESC:def       	DESC:def       	True
+LOC:other      	LOC:other      	True
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+LOC:city       	LOC:other      	False
+ENTY:dismed    	DESC:def       	False
+NUM:other      	DESC:def       	False
+ENTY:termeq    	LOC:other      	False
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+ENTY:color     	DESC:def       	False
+NUM:period     	LOC:other      	False
+ENTY:other     	DESC:def       	False
+ENTY:color     	DESC:def       	False
+ABBR:exp       	DESC:def       	False
+NUM:date       	DESC:def       	False
+DESC:def       	DESC:def       	True
+NUM:date       	LOC:other      	False
+NUM:date       	HUM:ind        	False
+LOC:other      	LOC:other      	True
+HUM:ind        	HUM:ind        	True
+LOC:other      	DESC:def       	False
+HUM:ind        	HUM:ind        	True
+NUM:date       	DESC:def       	False
+LOC:city       	DESC:def       	False
+LOC:other      	LOC:other      	True
+NUM:count      	NUM:count      	True
+DESC:def       	DESC:def       	True
+LOC:other      	NUM:count      	False
+DESC:def       	DESC:def       	True
+HUM:ind        	HUM:ind        	True
+LOC:other      	LOC:other      	True
+ENTY:other     	NUM:count      	False
+LOC:other      	HUM:ind        	False
+DESC:def       	DESC:def       	True
+NUM:date       	HUM:ind        	False
+ABBR:exp       	DESC:def       	False
+ENTY:color     	DESC:def       	False
+NUM:date       	HUM:ind        	False
+ABBR:exp       	DESC:def       	False
+DESC:reason    	NUM:count      	False
+NUM:money      	NUM:count      	False
+NUM:date       	HUM:ind        	False
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+NUM:date       	HUM:ind        	False
+ENTY:animal    	LOC:other      	False
+ENTY:veh       	HUM:ind        	False
+NUM:other      	DESC:def       	False
+LOC:other      	LOC:other      	True
+DESC:def       	DESC:def       	True
+ENTY:food      	DESC:def       	False
+DESC:def       	DESC:def       	True
+NUM:perc       	DESC:def       	False
+NUM:weight     	DESC:manner    	False
+ENTY:event     	HUM:ind        	False
+NUM:perc       	DESC:def       	False
+HUM:ind        	HUM:ind        	True
+NUM:other      	DESC:def       	False
+HUM:ind        	HUM:ind        	True
+ENTY:dismed    	HUM:ind        	False
+DESC:desc      	DESC:def       	False
+NUM:date       	LOC:other      	False
+DESC:def       	DESC:def       	True
+NUM:date       	LOC:other      	False
+LOC:other      	LOC:other      	True
+ENTY:plant     	DESC:def       	False
+ENTY:animal    	LOC:other      	False
+DESC:def       	DESC:def       	True
+HUM:ind        	HUM:ind        	True
+NUM:speed      	DESC:def       	False
+NUM:dist       	LOC:other      	False
+DESC:reason    	LOC:other      	False
+ENTY:animal    	DESC:def       	False
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+ENTY:body      	LOC:other      	False
+NUM:other      	LOC:other      	False
+DESC:def       	DESC:def       	True
+NUM:dist       	DESC:def       	False
+ENTY:color     	DESC:manner    	False
+ENTY:color     	DESC:def       	False
+DESC:def       	DESC:def       	True
+LOC:other      	LOC:other      	True
+NUM:weight     	DESC:def       	False
+ENTY:currency  	DESC:def       	False
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+ENTY:food      	HUM:ind        	False
+NUM:date       	LOC:other      	False
+LOC:other      	LOC:other      	True
+DESC:def       	DESC:def       	True
+ABBR:exp       	DESC:def       	False
+DESC:def       	DESC:def       	True
+HUM:ind        	HUM:ind        	True
+HUM:ind        	HUM:ind        	True
+ENTY:substance 	DESC:def       	False
+HUM:ind        	HUM:ind        	True
+NUM:period     	HUM:ind        	False
+NUM:date       	HUM:ind        	False
+DESC:def       	DESC:def       	True
+HUM:ind        	HUM:ind        	True
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+HUM:ind        	HUM:ind        	True
+DESC:def       	DESC:def       	True
+ENTY:animal    	HUM:ind        	False
+NUM:other      	NUM:count      	False
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+NUM:other      	NUM:count      	False
+NUM:perc       	LOC:other      	False
+LOC:mount      	LOC:other      	False
+HUM:ind        	HUM:ind        	True
+ENTY:substance 	DESC:def       	False
+NUM:date       	HUM:ind        	False
+ABBR:exp       	DESC:def       	False
+NUM:dist       	LOC:other      	False
+LOC:city       	HUM:ind        	False
+DESC:def       	DESC:def       	True
+LOC:other      	LOC:other      	True
+NUM:date       	HUM:ind        	False
+DESC:def       	DESC:def       	True
+HUM:ind        	HUM:ind        	True
+ENTY:substance 	DESC:def       	False
+LOC:city       	DESC:def       	False
+ABBR:exp       	DESC:def       	False
+ENTY:plant     	DESC:def       	False
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+HUM:ind        	HUM:ind        	True
+HUM:ind        	HUM:ind        	True
+NUM:date       	HUM:ind        	False
+LOC:other      	LOC:other      	True
+ENTY:veh       	HUM:ind        	False
+DESC:def       	DESC:def       	True
+LOC:other      	DESC:def       	False
+ENTY:other     	HUM:ind        	False
+DESC:def       	DESC:def       	True
+LOC:other      	LOC:other      	True
+DESC:def       	DESC:def       	True
+HUM:ind        	HUM:ind        	True
+DESC:def       	DESC:def       	True
+ENTY:animal    	HUM:ind        	False
+LOC:other      	HUM:ind        	False
+HUM:ind        	HUM:ind        	True
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+NUM:date       	HUM:ind        	False
+ABBR:exp       	DESC:def       	False
+ENTY:animal    	DESC:def       	False
+HUM:ind        	HUM:ind        	True
+ENTY:substance 	DESC:def       	False
+LOC:country    	NUM:count      	False
+ENTY:animal    	DESC:def       	False
+HUM:ind        	HUM:ind        	True
+ENTY:animal    	LOC:other      	False
+LOC:other      	DESC:def       	False
+HUM:ind        	HUM:ind        	True
+NUM:date       	HUM:ind        	False
+ENTY:animal    	HUM:ind        	False
+ENTY:color     	DESC:def       	False
+ENTY:sport     	LOC:other      	False
+ENTY:food      	DESC:def       	False
+NUM:date       	HUM:ind        	False
+NUM:temp       	DESC:def       	False
+NUM:date       	HUM:ind        	False
+ENTY:color     	DESC:def       	False
+LOC:other      	LOC:other      	True
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+HUM:gr         	DESC:def       	False
+ENTY:animal    	LOC:other      	False
+LOC:other      	LOC:other      	True
+NUM:date       	HUM:ind        	False
+LOC:state      	LOC:other      	False
+ENTY:termeq    	DESC:def       	False
+DESC:def       	DESC:def       	True
+HUM:gr         	LOC:other      	False
+DESC:def       	DESC:manner    	False
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+ENTY:currency  	DESC:def       	False
+NUM:other      	DESC:def       	False
+ENTY:other     	DESC:def       	False
+ENTY:currency  	DESC:def       	False
+DESC:def       	DESC:def       	True
+LOC:city       	LOC:other      	False
+ENTY:color     	DESC:def       	False
+LOC:country    	HUM:ind        	False
+ENTY:product   	HUM:ind        	False
+ENTY:substance 	DESC:def       	False
+ENTY:substance 	DESC:def       	False
+DESC:def       	DESC:def       	True
+LOC:other      	LOC:other      	True
+DESC:def       	DESC:def       	True
+LOC:city       	LOC:other      	False
+NUM:dist       	NUM:count      	False
+ENTY:other     	DESC:def       	False
+ENTY:veh       	HUM:ind        	False
+DESC:def       	DESC:def       	True
+DESC:def       	DESC:def       	True
+ENTY:techmeth  	DESC:def       	False
+NUM:date       	LOC:other      	False
+NUM:count      	DESC:manner    	False
+HUM:ind        	HUM:ind        	True
+ENTY:currency  	DESC:def       	False
+NUM:count      	NUM:count      	True
+ENTY:substance 	DESC:def       	False
+DESC:def       	DESC:def       	True
+The accuracy of 2 models are: 
+0.442 
+0.442 
 
-The ensembled accuracy is: 0.652
+The ensembled accuracy is: 0.442
 
 Confusion Matrix:
-     0   1  2   3  4  5    6   7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49
-0   0   0  0   0  0  0    0   0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-1   0  11  0   1  2  0    0   0  0  0   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-2   0   0  5   0  0  0    3   0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-3   0   0  0  52  0  0    1   0  0  0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-4   0   0  0   0  4  0    1   0  0  0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-5   0   0  0   0  1  0    0   0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-6   0   0  0   0  0  0  119   0  0  0   0   3   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-7   0   0  0   4  0  0    0  39  0  0   0   0   0   0   0   2   0   0   1   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-8   0   0  0   0  0  0    1   0  5  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-9   0   0  0   1  1  0    0   0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-10  0   0  0   0  0  0    0   1  0  0   2   0   0   0   0   2   0   0   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-11  0   0  0   0  1  0    4   0  0  0   0   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-12  0   0  0   0  0  0    0   0  0  0   0   0   8   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
-13  0   0  0   0  1  0    3   1  1  0   0   3   0   0   0   2   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-14  0   0  0   0  0  0    0   0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-15  0   0  0   1  0  0    1   1  0  0   0   1   0   0   0  41   0   0   3   0   0   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-16  0   0  0   0  0  0    0   0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-17  0   0  0   0  0  0    0   0  0  0   0   0   0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-18  0   0  0   1  0  0    0   0  0  0   0   0   0   0   0   0   0   0   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-19  0   2  0   0  0  0    2   0  0  0   0   2   0   0   0   0   0   1   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-20  1   0  0   0  0  0    3   0  0  0   0   2   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-21  0   0  0   1  0  0    0   0  0  0   0   0   0   0   0   1   0   0   0   0   0  16   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-22  0   2  0   0  0  0    0   0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-23  0   0  0   1  0  0    0   0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-24  0   0  0   0  0  0    0   0  0  0   0   0   0   0   0   2   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-25  0   0  0   0  0  0    0   0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
-26  1   0  0   2  0  0    0   0  0  0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-27  0   0  0   1  0  0    0   3  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
-28  0   0  0   0  0  0    8   0  1  0   0   2   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-29  0   0  0   0  0  0    0   0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-30  0   0  0   0  0  0    0   0  0  0   3   1   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-31  0   0  0   0  0  0    0   0  0  0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-32  0   0  0   0  0  0    0   0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-33  0   0  0   2  0  0    0   0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-34  0   0  0   0  0  0    0   0  0  0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-35  0   0  0   0  0  0    1   0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-36  0   0  0   0  0  0    3   0  0  0   0   0   1   0   0   0   0   0   2   0   0   0   0   0   0   2   0   0   0   0   0   0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0
-37  0   0  0   0  0  0    2   0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   3
-38  0   0  0   0  0  0    0   0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-39  0   0  0   0  0  0    0   0  0  0   0   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-40  0   0  0   0  0  0    1   0  0  0   0   1   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-41  0   0  0   0  0  0    0   0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-42  0   0  0   0  1  0    3   0  0  0   1   0   4   0   0   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   5
-43  0   0  0   0  0  0    0   0  0  0   0   2   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
-44  0   0  0   0  0  0    0   0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-45  0   0  0   0  0  0    0   0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-46  0   0  0   2  0  0    0   0  0  0   0   0   0   0   0   1   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-47  0   0  0   0  0  0    2   0  0  0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-48  0   0  0   0  0  0    6   0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-49  0   0  0   0  0  0    0   0  0  0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1 
-Micro F1:  0.652 
-Macro F1:  0.342843519130957
+     0  1  2   3  4  5    6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49
+0   0  0  0   0  0  0    0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+1   0  0  0   6  0  0    4  0  0  0   0   0   0   0   0   6   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+2   0  0  0   0  0  0    8  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+3   0  0  0  53  0  0    1  0  0  0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+4   0  0  0   2  0  0    1  0  0  0   0   0   1   0   0   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+5   0  0  0   0  0  0    0  0  0  0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+6   0  0  0   0  0  0  120  0  0  0   0   0   1   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+7   0  0  0  29  0  0    4  0  0  0   0   0   1   0   0  13   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+8   0  0  0   0  0  0    3  0  0  0   0   0   2   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+9   0  0  0   1  0  0    0  0  0  0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+10  0  0  0   0  0  0    0  0  0  0   0   0   1   0   0   6   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+11  0  0  0   0  0  0    6  0  0  0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+12  0  0  0   0  0  0    0  0  0  0   0   0   8   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+13  0  0  0   1  0  0    7  0  0  0   0   0   1   0   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+14  0  0  0   0  0  0    0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+15  0  0  0   3  0  0    5  0  0  0   0   0   3   0   0  39   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+16  0  0  0   0  0  0    0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+17  0  0  0   1  0  0    3  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+18  0  0  0   1  0  0    0  0  0  0   0   0   1   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+19  0  0  0   0  0  0    8  0  0  0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+20  0  0  0   0  0  0    4  0  0  0   0   0   0   0   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+21  0  0  0   2  0  0    5  0  0  0   0   0   1   0   0  10   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+22  0  0  0   0  0  0    1  0  0  0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+23  0  0  0   1  0  0    1  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+24  0  0  0   0  0  0    0  0  0  0   0   0   0   0   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+25  0  0  0   0  0  0    1  0  0  0   0   0   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+26  0  0  0   3  0  0    0  0  0  0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+27  0  0  0   3  0  0    1  0  0  0   0   0   2   0   0   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+28  0  0  0   1  0  0   13  0  0  0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+29  0  0  0   0  0  0    0  0  0  0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+30  0  0  0   0  0  0    2  0  0  0   0   0   0   0   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+31  0  0  0   0  0  0    1  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+32  0  0  0   0  0  0    0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+33  0  0  0   3  0  0    0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+34  0  0  0   0  0  0    1  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+35  0  0  0   0  0  0    1  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+36  0  0  0   0  0  0    9  0  0  0   0   0   2   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+37  0  0  0   0  0  0    3  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   3
+38  0  0  0   0  0  0    0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+39  0  0  0   0  0  0    2  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+40  0  0  0   0  0  0    2  0  0  0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+41  0  0  0   0  0  0    0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+42  0  0  0   0  0  0    3  0  0  0   0   0   8   0   0   5   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+43  0  0  0   0  0  0    5  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+44  0  0  0   0  0  0    0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+45  0  0  0   0  0  0    0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+46  0  0  0   3  0  0    0  0  0  0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+47  0  0  0   0  0  0    2  0  0  0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+48  0  0  0   0  0  0    6  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+49  0  0  0   0  0  0    0  0  0  0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1 
+Micro F1:  0.442 
+Macro F1:  0.09781273830054318
