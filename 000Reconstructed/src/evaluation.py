@@ -83,7 +83,7 @@ def get_confusion_matrix(y_real,y_preds,size):
     pd.set_option('display.width', 100)
     pd.set_option('expand_frame_repr', False)
     pd.set_option('max_colwidth',100)
-    mat = np.zeros( (size,size) , dtype=np.dtype(np.int8))
+    mat = np.zeros( (size,size) , dtype=np.dtype(np.int32))
     for i in range(len(y_real)):
         if y_real[i]==y_preds[i]:
             mat[y_real[i]-1][y_real[i]-1] += 1
