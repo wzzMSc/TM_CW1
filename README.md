@@ -36,3 +36,11 @@
 - `lr_param`: The learning rate parameter.
 - `sgd_momentum`: The momentum of learning rate.
 - `path_eval_result`: The path of evaluation output.
+
+# Evaluation results
+
+- F1-score of each class
+- Actual and predicted labels and whether the predictions are correct.
+- Accuracy of the model
+- Confusion matrix
+- Micro and Macro F1-score
