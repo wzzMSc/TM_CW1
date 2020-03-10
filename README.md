@@ -7,10 +7,22 @@
 
 # About configurations
 
+## Configuration files
+
+- `bow.config`: Configuration file of FFNN with bag of words.
+- `bilstm.config`: Configuration file of FFNN with BiLSTM.
+- `bow_bilstm.config`: Configuration file of FFNN with bag of words and BiLSTM.
+- `bow_ffnn_ens.config`: Configuration file of FFNN with bag of words and ensemble method.
+- `bilstm_ffnn_ens.config`: Configuration file of FFNN with bag of words and ensemble method.
+- `bow_bilstm_ens.config`: Configuration file of FFNN with bag of words, BiLSTM and ensemble method.
+
+## Fields
+
 - `path_data`: The path to the data used for training and validation. We divide the data into training and validation sets within the program with the ratio of 9:1.
 - `path_test`: The path to the data used for testing.
 - `model`: Can only be bow, bilstm and bow_bilstm.
-- `path_model`: The path of model storage
+- `path_model`: The path of model storage.
+- `ensemble_size`: The number of ensemble models.
 - `min_words`: The minimum occurrences of words for it to be enlisted in vocabulary. `0` stands for include all appeared words.
 - `freeze`: Whether to freeze the word embeddings during model training process.
 - `from_pretrained`: Whether to use pretrained word embeddings.

@@ -129,7 +129,9 @@ None
   4. Define and train different models according to configuration.
   5. Print out the accuracy, confusion matrix, micro and macro F1-score and save them into the pre-configured file.
 
-
+- `ens_bow(self,train_set,dev_set,voca_embs,vocabulary,labels_index)`: train bag of words models in an ensembled way
+- `ens_bilstm(self,train_set,dev_set,voca_embs,vocabulary,labels_index)`: train BiLSTM models in an ensembled way
+- `ens_bow_bilstm(self,train_set,dev_set,voca_embs,vocabulary,labels_index)`: train bag of words models with BiLSTM layer in an ensembled way
 
 ## ffnn.py
 
@@ -286,6 +288,8 @@ None
 - `get_accuracy_bow(model,loader)`: get the accuracy of bow model in a batched way
 - `get_accuracy_bilstm(model,loader)`: get the accuracy of BiLSTM model in a batched way
 - `get_accuracy_test(model,model_type,x,y,lengths)`: get the accuracy of models in a non-batched way
+- `get_accuracy_ens_bow(models,x,y)`: get the accuracy of ensembled bag of words models
+- `get_accuracy_ens_bilstm(models,x,y,lengths)`:get the accuracy of ensembled BiLSTM models
 - `get_confusion_matrix(y_real,y_preds,size)`: calculate the confusion matrix from the actual and predicted labels
 - `get_micro_f1(conf_mat)`: calculate the micro f1-score based on confusion matrix
 - `get_macro_f1(conf_mat)`: calculate the macro f1-score based on confusion matrix
